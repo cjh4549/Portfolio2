@@ -248,10 +248,10 @@ p {
 
 a {
   text-decoration: none;
-  color: white;
+  color: #f0efed;
 }
 
-ul {
+ul, li {
   margin: 0;
   padding: 0;
   list-style: none;
@@ -259,4 +259,52 @@ ul {
 
 fieldset {
   padding: 0;
+}
+
+.skip-link {
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
+
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.wrapper {
+  width: 80%;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.navbar {
+  display: none;
+}
+
+.hero {
+  display: flex;
+  height: 100vh;
+}
+.hero__left {
+  flex: 1;
+}
+.hero__left h1 {
+  font-size: 1.5rem;
+  font-weight: 300;
+}
+.hero__left span {
+  display: block;
+  font-size: 2rem;
+  font-weight: bold;
+}
+.hero__left .hero__title--item {
+  font-weight: 300;
+}
+.hero__right {
+  flex: 1;
 }

@@ -1,0 +1,33 @@
+.navbar {
+    display: none;
+}
+
+.hero {
+    display: flex;
+    height: 100vh;
+
+    &__left {
+        flex: 1;
+
+        & h1 {
+            font-size: 1.5rem;
+            font-weight: 300;
+        }
+        
+        & span {
+            display: block;
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        & .hero__title {
+             &--item {
+                 font-weight: 300;
+             }
+        }
+    }
+
+    &__right {
+        flex: 1;
+    }
+}
