@@ -282,6 +282,41 @@ fieldset {
   margin: 0 auto;
 }
 
+@-webkit-keyframes slotMachine {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-2.5rem);
+  }
+  50% {
+    transform: translateY(-5rem);
+  }
+  75% {
+    transform: translateY(-6rem);
+  }
+  100% {
+    transform: translateY(-8rem);
+  }
+}
+
+@keyframes slotMachine {
+  0% {
+    transform: translateY(0);
+  }
+  25% {
+    transform: translateY(-2.5rem);
+  }
+  50% {
+    transform: translateY(-5rem);
+  }
+  75% {
+    transform: translateY(-6rem);
+  }
+  100% {
+    transform: translateY(-8rem);
+  }
+}
 .navbar {
   display: none;
 }
@@ -310,8 +345,8 @@ fieldset {
 }
 .hero__left .hero__title--container {
   height: 100%;
-  -webkit-animation: slotMachine 5s ease-in-out infinite alternate;
-          animation: slotMachine 5s ease-in-out infinite alternate;
+  -webkit-animation: slotMachine 7s ease-in-out infinite alternate;
+          animation: slotMachine 7s ease-in-out infinite alternate;
 }
 .hero__left .hero__title--item {
   display: flex;
