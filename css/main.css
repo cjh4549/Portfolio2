@@ -283,38 +283,26 @@ fieldset {
 }
 
 @-webkit-keyframes slotMachine {
-  0% {
-    transform: translateY(0);
+  33% {
+    transform: translateY(-2rem);
   }
-  25% {
-    transform: translateY(-2.5rem);
-  }
-  50% {
-    transform: translateY(-5rem);
-  }
-  75% {
-    transform: translateY(-6rem);
+  66% {
+    transform: translateY(-4rem);
   }
   100% {
-    transform: translateY(-8rem);
+    transform: translateY(-6rem);
   }
 }
 
 @keyframes slotMachine {
-  0% {
-    transform: translateY(0);
+  33% {
+    transform: translateY(-2rem);
   }
-  25% {
-    transform: translateY(-2.5rem);
-  }
-  50% {
-    transform: translateY(-5rem);
-  }
-  75% {
-    transform: translateY(-6rem);
+  66% {
+    transform: translateY(-4rem);
   }
   100% {
-    transform: translateY(-8rem);
+    transform: translateY(-6rem);
   }
 }
 .navbar {
@@ -345,8 +333,8 @@ fieldset {
 }
 .hero__left .hero__title--container {
   height: 100%;
-  -webkit-animation: slotMachine 7s ease-in-out infinite alternate;
-          animation: slotMachine 7s ease-in-out infinite alternate;
+  -webkit-animation: slotMachine 5s ease-in-out infinite alternate;
+          animation: slotMachine 5s ease-in-out infinite alternate;
 }
 .hero__left .hero__title--item {
   display: flex;
