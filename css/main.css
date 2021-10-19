@@ -292,6 +292,8 @@ fieldset {
 }
 .hero__left {
   flex: 1;
+  padding: 2rem;
+  line-height: 1.5;
 }
 .hero__left h1 {
   font-size: 1.5rem;
@@ -299,11 +301,25 @@ fieldset {
 }
 .hero__left span {
   display: block;
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: bold;
 }
+.hero__left .hero__title {
+  height: 2rem;
+  overflow: hidden;
+}
+.hero__left .hero__title--container {
+  height: 100%;
+  -webkit-animation: slotMachine 5s ease-in-out infinite alternate;
+          animation: slotMachine 5s ease-in-out infinite alternate;
+}
 .hero__left .hero__title--item {
-  font-weight: 300;
+  display: flex;
+  align-items: center;
+  height: 2rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #406343;
 }
 .hero__right {
   flex: 1;
