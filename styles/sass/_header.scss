@@ -71,6 +71,17 @@
         padding: 2rem;
         line-height: 1.5;
 
+        &__bg {
+            position: absolute;
+            top: -11%;
+            left: -35%;
+            clip-path: circle(50% at 50% 50%);
+            background-color: $lightBeige;
+            height: 65vw;
+            width: 75vw;
+            z-index: -1;
+        }
+
         & h1 {
             font-size: 1.5rem;
             font-weight: 300;
@@ -111,17 +122,6 @@
         flex-direction: column;
         flex: 1 0 50%;
         z-index: -10;
-
-        &__bg {
-            position: absolute;
-            top: -11%;
-            left: -35%;
-            clip-path: circle(50% at 50% 50%);
-            background-color: $lightBeige;
-            height: 65vw;
-            width: 75vw;
-            z-index: -1;
-        }
 
         &__circle {
             position: absolute;
