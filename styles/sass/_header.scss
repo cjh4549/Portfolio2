@@ -2,66 +2,12 @@
     overflow-y: hidden;
 }
 
-.navbar {
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    font-size: 0.9rem;
-    z-index: 10;
-    pointer-events: none;
-    
-    &__logo {
-        display: none;
-    }
-
-    &__items {
-        display:flex;
-        height: 7vw;
-        
-        & li:nth-of-type(1) {
-            position: relative;
-            top: 66%;
-            transform: rotate(-63deg);
-            height: 5vw;
-            z-index: 1000;
-        }
-
-        & li:nth-of-type(2) {
-            position: relative;
-            top: 0%;
-            transform: rotate(-32deg);
-        }
-
-        & li:nth-of-type(3) {
-            position: relative;
-            top: -20%;
-        }
-
-        & li:nth-of-type(4) {
-            position: relative;
-            top: -10%;
-            height: 15vw;
-            transform: rotate(25deg);
-        }
-
-        & li:nth-of-type(5) {
-            position: relative;
-            top: 40%;
-            transform: rotate(60deg);
-            height: 10vw;
-        }
-    }
-    &__items li a {
-        position: relative;
-        z-index: 20;
-    }
-}
-
 .hero {
     position: relative;
     display: flex;
     height: 100vh;
-    // z-index: -10;
+
+    // Hero left side
 
     &__left {
         display: flex;
@@ -115,23 +61,17 @@
         }
     }
 
+    // Hero right side
+
     &__right {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
         flex: 1 0 50%;
-        z-index: -10;
 
         &__circle {
             position: absolute;
             top: 18%;
             right: 0%;
-            clip-path: inset(0 0 0 0);
             width: 30vw;
             height: 25vw;
-            z-index: -1;
-            border-radius: 1000px;
 
             &::after {
                 content: "";
@@ -152,5 +92,61 @@
             left: 20%;
             height: 21vw;
         }
+    }
+}
+
+// Navbar inside the hero right container
+
+.navbar {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 0.9rem;
+    z-index: 10;
+    
+    &__logo {
+        display: none;
+    }
+
+    &__items {
+        display:flex;
+        height: 7vw;
+        
+        & li:nth-of-type(1) {
+            position: relative;
+            top: 66%;
+            transform: rotate(-63deg);
+            height: 5vw;
+            z-index: 1000;
+        }
+
+        & li:nth-of-type(2) {
+            position: relative;
+            top: 0%;
+            transform: rotate(-32deg);
+        }
+
+        & li:nth-of-type(3) {
+            position: relative;
+            top: -20%;
+        }
+
+        & li:nth-of-type(4) {
+            position: relative;
+            top: -10%;
+            height: 15vw;
+            transform: rotate(25deg);
+        }
+
+        & li:nth-of-type(5) {
+            position: relative;
+            top: 40%;
+            transform: rotate(60deg);
+            height: 10vw;
+        }
+    }
+    &__items li a {
+        position: relative;
+        z-index: 20;
     }
 }
