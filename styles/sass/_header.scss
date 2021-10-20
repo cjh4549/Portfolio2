@@ -8,6 +8,7 @@
     left: 10%;
     font-size: 0.9rem;
     z-index: 10;
+    pointer-events: none;
     
     &__logo {
         display: none;
@@ -22,6 +23,7 @@
             top: 66%;
             transform: rotate(-63deg);
             height: 5vw;
+            z-index: 1000;
         }
 
         & li:nth-of-type(2) {
@@ -49,19 +51,23 @@
             height: 10vw;
         }
     }
+    &__items li a {
+        position: relative;
+        z-index: 20;
+    }
 }
 
 .hero {
     position: relative;
     display: flex;
     height: 100vh;
-    z-index: -10;
+    // z-index: -10;
 
     &__left {
         display: flex;
         justify-content: center;
         flex-direction: column;
-        flex: 1;
+        flex: 1 0 50%;
         padding: 2rem;
         line-height: 1.5;
 
@@ -103,7 +109,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-        flex: 1;
+        flex: 1 0 50%;
         z-index: -10;
 
         &__bg {
