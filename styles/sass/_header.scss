@@ -98,14 +98,6 @@
         }
     }
 
-    &__intro {
-        & p {
-            font-size: .9rem;
-            font-weight: 300;
-            color: $black;
-        }
-    }
-
     &__right {
         display: flex;
         justify-content: center;

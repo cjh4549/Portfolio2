@@ -246,6 +246,12 @@ p {
   padding: 0;
 }
 
+p {
+  font-size: 0.9rem;
+  font-weight: 300;
+  color: #2c2c2c;
+}
+
 a {
   text-decoration: none;
   color: #2c2c2c;
@@ -392,11 +398,6 @@ fieldset {
   font-size: 1.2rem;
   font-weight: bold;
   color: #86b68b;
-}
-.hero__intro p {
-  font-size: 0.9rem;
-  font-weight: 300;
-  color: #2c2c2c;
 }
 .hero__right {
   display: flex;
