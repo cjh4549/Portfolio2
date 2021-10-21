@@ -293,6 +293,10 @@ fieldset {
   margin: 0 auto;
 }
 
+.opaque {
+  opacity: 0;
+}
+
 @-webkit-keyframes slotMachine {
   33% {
     transform: translateY(-2rem);
