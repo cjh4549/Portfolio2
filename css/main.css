@@ -454,6 +454,29 @@ fieldset {
   letter-spacing: 1px;
 }
 
+.hero__left h2 {
+  margin-bottom: 1rem;
+}
+.hero__description {
+  position: relative;
+}
+.hero__description span {
+  display: inline-block;
+  font-size: 0.9rem;
+}
+.hero__description img:nth-of-type(1) {
+  margin-top: 2rem;
+  height: 10vw;
+  border-radius: 50%;
+}
+.hero__description__img {
+  transform: rotate(180deg);
+  transform: scaleX(-1);
+  position: absolute;
+  bottom: 14%;
+  right: 37%;
+  width: 9vw;
+}
 .hero__right {
   display: flex;
   justify-content: center;
