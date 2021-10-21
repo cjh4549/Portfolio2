@@ -248,7 +248,7 @@ p {
 
 p {
   font-size: 0.9rem;
-  font-weight: 300;
+  font-weight: 400;
   color: #2c2c2c;
 }
 
@@ -312,7 +312,17 @@ fieldset {
   }
 }
 .header {
-  overflow-y: hidden;
+  overflow: hidden;
+}
+
+.whiteOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100%;
+  background: #F3EFCC;
+  z-index: 100;
 }
 
 .hero {
@@ -440,4 +450,15 @@ fieldset {
 .navbar__items li a {
   position: relative;
   z-index: 20;
+}
+
+.hero__right {
+  display: flex;
+  justify-content: center;
+}
+.hero__development {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }

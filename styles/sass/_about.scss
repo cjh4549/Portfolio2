@@ -1,0 +1,16 @@
+.hero {
+
+    &__right {
+        display: flex;
+        justify-content: center;
+    }
+
+    &__development {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+    
