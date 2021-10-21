@@ -556,3 +556,7 @@ fieldset {
 .hero__devBox__container p {
   text-align: center;
 }
+
+main {
+  overflow: hidden;
+}
