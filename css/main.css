@@ -447,11 +447,10 @@ fieldset {
   transform: rotate(60deg);
   height: 10vw;
 }
-.navbar__items a {
-  transition: all 0.3s;
+.navbar__items li a {
+  transition: all 0.2s;
 }
-.navbar__items a:hover, .navbar__items a:focus {
-  top: -10%;
+.navbar__items li:hover a {
   letter-spacing: 1px;
 }
 
