@@ -447,9 +447,12 @@ fieldset {
   transform: rotate(60deg);
   height: 10vw;
 }
-.navbar__items li a {
-  position: relative;
-  z-index: 20;
+.navbar__items a {
+  transition: all 0.3s;
+}
+.navbar__items a:hover, .navbar__items a:focus {
+  top: -10%;
+  letter-spacing: 1px;
 }
 
 .hero__right {

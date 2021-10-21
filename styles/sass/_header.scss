@@ -154,9 +154,15 @@
             transform: rotate(60deg);
             height: 10vw;
         }
-    }
-    &__items li a {
-        position: relative;
-        z-index: 20;
+
+        & a {
+            transition: all 0.3s;
+        }
+
+        & a:hover,
+        & a:focus {
+            top: -10%;
+            letter-spacing: 1px;
+        }
     }
 }
