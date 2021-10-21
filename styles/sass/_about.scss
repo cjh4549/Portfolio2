@@ -1,7 +1,4 @@
 .hero {
-
-    
-
     &__left {
 
         & h2 {
@@ -95,10 +92,11 @@
             margin: 3%;
 
             & img {
-                height: 4vw
+                height: 3vw;
             }
 
             & p {
+                font-size: 0.8rem;
                 text-align: center;
             }
         }

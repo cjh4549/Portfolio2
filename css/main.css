@@ -551,12 +551,23 @@ fieldset {
   margin: 3%;
 }
 .hero__devBox__container img {
-  height: 4vw;
+  height: 3vw;
 }
 .hero__devBox__container p {
+  font-size: 0.8rem;
   text-align: center;
 }
 
 main {
   overflow: hidden;
+}
+
+.project {
+  overflow: hidden;
+}
+.project__mockup {
+  width: 100%;
+}
+.project__mockup img {
+  width: 20rem;
 }
