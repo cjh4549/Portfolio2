@@ -472,10 +472,14 @@ fieldset {
   letter-spacing: 1px;
 }
 
+.about {
+  overflow: hidden;
+}
+
 .hero__left h2 {
   position: relative;
   display: inline-block;
-  font-size: 2.5rem;
+  font-size: 2rem;
   margin-bottom: 1rem;
 }
 .hero__left h2::before {
@@ -532,8 +536,7 @@ fieldset {
 }
 .hero__development h3 {
   margin-bottom: 2rem;
-  font-size: 3rem;
-  width: 110%;
+  font-size: 2rem;
 }
 .hero__devBox {
   display: flex;
@@ -560,6 +563,10 @@ fieldset {
   text-align: center;
 }
 
+body {
+  overflow: hidden;
+}
+
 main {
   overflow: hidden;
   height: 100vh;
@@ -573,20 +580,48 @@ main {
   left: 50%;
   transform: translate(-50%, -50%);
   perspective: 1000px;
+  padding: 10%;
 }
 .project__mockup {
+  margin-bottom: 1rem;
   width: 100%;
 }
 .project__mockup img {
   width: 20rem;
 }
 .project__card {
-  transform-style: preserve-3d;
+  text-align: center;
+}
+.project__text {
+  margin: 0 auto;
+  padding: 3%;
+  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
+  width: 90%;
+  text-align: left;
 }
 .project__text h3 {
   font-size: 1.5rem;
-  margin: 1rem 0;
+  margin: 0.5rem 0;
   transform: translateZ(150px);
+}
+.project__text p:nth-of-type(1) {
+  margin-bottom: 1rem;
+  font-weight: 300;
+}
+.project__text p:nth-of-type(2) {
+  font-size: 0.7rem;
+}
+.project__text__container {
+  position: relative;
+}
+.project__text__hidden {
+  position: absolute;
+  top: 50%;
+  transform: rotateX(120deg) rotateY(360deg);
+  opacity: 0;
+}
+.project__text__hidden > a {
+  margin-right: 1rem;
 }
 
 .projectOverlay {

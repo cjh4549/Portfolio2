@@ -1,8 +1,9 @@
 const heroLeftBg = document.querySelector('.hero__left__bg');
 const project = document.querySelector('.project');
-const projectCard = document.querySelector('.project__mockup');
+const projectCard = document.querySelector('.project__card');
 const projectOverlay = document.querySelector('.projectOverlay');
 const projectText = document.querySelector('.project__text');
+const projectHidden = document.querySelector('.project__text__hidden');
 
 const vw = (width) => window.innerWidth * (width/100)
 const vh = (height) => window.innerHeight * (height/100)
@@ -13,13 +14,27 @@ const tl = new TimelineMax();
 tl.to(heroLeftBg, {duration: 1.2, delay: 0.3, x: -200, height: vh(170), width: vw(180), ease: Power2.easeInOut});
 tl.to(project, {opacity: 1, duration: -2});
 tl.to(projectOverlay, {height: 0, duration: 0.8, ease: Power2.easeOut});
+tl.from(projectText, {opacity: 0, duration: 1, y: 50, ease: Power2.easeInOut});
 
-project.addEventListener('mouseenter', (e) => {
+projectText.addEventListener('mouseenter', () => {
     projectText.style.transition = 'all 0.8s';
-    projectText.style.transform = 'perspective(500px) rotateX(50deg) rotateY(100deg) translateZ(100px)';
+    projectText.style.transform = 'perspective(2000px) rotateX(10deg) rotateY(180deg) translateZ(50px)';
+    projectText.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.0)';
+    projectText.style.opacity = '0.1';
+
+    projectHidden.style.opacity = '1';
+    projectHidden.style.transition = 'all 1s';
+    projectHidden.style.zIndex = '100';
+    projectHidden.style.transform = 'perspective(2000px) rotateX(10deg) rotateY(0deg) translateZ(50px)';
 })
 
-project.addEventListener('mouseleave', (e) => {
+projectCard.addEventListener('mouseleave', () => {
     projectText.style.transition = 'all 0.8s';
-    projectText.style.transform = 'translateZ(0)';
+    projectText.style.transform = 'rotateX(10deg) rotateY(0deg) translateZ(0)';
+    projectText.style.boxShadow = '20px 20px 20px rgba(0, 0, 0, 0.1)';
+    projectText.style.opacity = '1';
+
+    projectHidden.style.opacity = '0';
+    projectHidden.style.transition = 'all 0.5s';
+  
 })
