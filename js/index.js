@@ -7,6 +7,10 @@ const navbarLink = document.querySelector('.navbar__items li a')
 
 const tl = new TimelineMax();
 
+const vw = (width) => window.innerWidth * (width/100)
+const vh = (height) => window.innerHeight * (height/100)
+
+
 // Animation on initial load
 
 tl.from(heroLeftBg, {duration: 1.5, width: 0,  ease: Power2.easeOut});
@@ -23,9 +27,20 @@ function delay (url) {
     whiteOverlay.style.height = "150%";
     whiteOverlay.style.transition = "all 1s ease";
 
-    setTimeout(() => {
-        window.location = url
-    }, 1000);
+    if (url == './html/contact.html') {
+        whiteOverlay.style.display ="none";
+        tl.to(heroLeftBg, {duration: 1.2, delay: 0.3, x: -200, zIndex: 1000, height: vh(170), width: vw(180), ease: Power2.easeInOut});
+        setTimeout(() => {
+            window.location = url
+        }, 2000);
+        
+    } else {
+        setTimeout(() => {
+            window.location = url
+        }, 1000);
+    }
+
+    
 
 
 }
