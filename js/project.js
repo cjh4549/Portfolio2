@@ -2,8 +2,12 @@ const heroLeftBg = document.querySelector('.hero__left__bg');
 const project = document.querySelector('.project');
 const projectCard = document.querySelector('.project__card');
 const projectOverlay = document.querySelector('.projectOverlay');
+const projectTextContainer = document.querySelector('.project__text__container');
 const projectText = document.querySelector('.project__text');
 const projectHidden = document.querySelector('.project__text__hidden');
+const laptopOpen = document.querySelector('.project__mockup__open');
+const laptopClosed = document.querySelector('.project__mockup__closed');
+const nextArrow = document.querySelector('.arrow');
 
 const vw = (width) => window.innerWidth * (width/100)
 const vh = (height) => window.innerHeight * (height/100)
@@ -20,7 +24,7 @@ tl.from(projectText, {opacity: 0, duration: 1, y: 50, ease: Power2.easeInOut});
 projectText.addEventListener('mouseenter', () => {
     projectText.style.transition = 'all 1s';
     projectText.style.transform = 'perspective(2000px) rotateX(10deg) rotateY(180deg) translateZ(50px)';
-    projectText.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.0)';
+    projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2);';
     projectText.style.opacity = '0.1';
     
     projectHidden.style.opacity = '1';
@@ -34,7 +38,7 @@ projectText.addEventListener('mouseenter', () => {
 projectCard.addEventListener('mouseleave', () => {
     projectText.style.transition = 'all 1s';
     projectText.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    projectText.style.boxShadow = '20px 10px 20px rgba(0, 0, 0, 0.1)';
+    projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2);';
     projectText.style.opacity = '1';
 
     projectHidden.style.opacity = '0.2';
@@ -44,9 +48,20 @@ projectCard.addEventListener('mouseleave', () => {
     projectHidden.style.top = '1%';
 })
 
+
 function delay (url) {
+    tl.to(laptopOpen, {opacity: 0, duration: 0.2});
+    tl.to(laptopClosed, {duration: 0.5, opacity: 1, top: 190});
+
+    
+    projectTextContainer.style.opacity = '0'
+    projectTextContainer.style.transition = 'all 0.7s';
+    
+    // projectOverlay.style.height = '100%'
+    // projectOverlay.style.transition = 'all 0.5s';
 
     setTimeout(() => {
         window.location = url
-    }, 1000);
+    }, 1500);
 }
+
