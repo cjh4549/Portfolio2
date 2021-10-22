@@ -23,9 +23,21 @@
                 </div>
             </div>
 
-            <section class="project">
+            <form action="" class="form">
+                <fieldset>
+                    <div class="form-container">
+                        <label for="name" class="sr-only">Name</label>
+                        <input type="text" id="name" placeholder="Name">
 
-            </section>
+                        <label for="email" class="sr-only">Email Address</label>
+                        <input type="email" id="email" placeholder="Email address">
+                    </div>
+                    <label for="comment" class="sr-only">Comment</label>
+                    <textarea name="comment" id="comment" cols="20" rows="10" placeholder="Message"></textarea>
+
+                    <button type="submit" class="btn">Post Comment</button>
+                </fieldset>
+            </form>
 
         </div>
         <div class="arrow" onclick="window.location='./contact.html'">

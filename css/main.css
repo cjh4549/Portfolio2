@@ -679,3 +679,7 @@ main {
   background: #F3EFCC;
   z-index: 100;
 }
+
+.form {
+  position: absolute;
+}
