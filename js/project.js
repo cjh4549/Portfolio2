@@ -43,3 +43,12 @@ projectCard.addEventListener('mouseleave', () => {
     projectHidden.style.right = '10%';
     projectHidden.style.top = '1%';
 })
+
+function delay (url) {
+
+    setTimeout(() => {
+        window.location = url
+    }, 1000);
+
+
+}

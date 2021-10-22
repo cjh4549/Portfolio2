@@ -320,6 +320,7 @@ fieldset {
 
 .fa-angle-right,
 .fa-angle-double-left {
+  font-size: 1.3rem;
   color: #86b68b;
 }
 
@@ -598,6 +599,7 @@ body {
 }
 
 main {
+  display: flex;
   overflow: hidden;
   height: 100vh;
 }
@@ -629,6 +631,7 @@ main {
   box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.2);
   width: 95%;
   text-align: left;
+  border-radius: 10px;
 }
 .project__text h3 {
   font-size: 1.5rem;
