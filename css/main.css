@@ -504,7 +504,7 @@ fieldset {
   height: 10vw;
   border-radius: 50%;
 }
-.hero__description__img {
+.hero__description__arrow {
   transform: rotate(180deg);
   transform: scaleX(-1);
   position: absolute;
@@ -583,6 +583,7 @@ main {
   padding: 10%;
 }
 .project__mockup {
+  position: relative;
   margin-bottom: 1rem;
   width: 100%;
 }
@@ -595,8 +596,8 @@ main {
 .project__text {
   margin: 0 auto;
   padding: 3%;
-  box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-  width: 90%;
+  box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.2);
+  width: 95%;
   text-align: left;
 }
 .project__text h3 {
@@ -605,19 +606,20 @@ main {
   transform: translateZ(150px);
 }
 .project__text p:nth-of-type(1) {
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
   font-weight: 300;
 }
 .project__text p:nth-of-type(2) {
-  font-size: 0.7rem;
+  font-size: 0.8rem;
 }
 .project__text__container {
   position: relative;
 }
 .project__text__hidden {
   position: absolute;
-  top: 50%;
-  transform: rotateX(120deg) rotateY(360deg);
+  top: 25%;
+  right: 0%;
+  transform: perspective(2000px) rotateY(150deg) translateZ(150px);
   opacity: 0;
 }
 .project__text__hidden > a {

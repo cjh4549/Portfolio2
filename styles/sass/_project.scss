@@ -18,6 +18,7 @@ main {
     padding: 10%;
 
     &__mockup {
+        position: relative;
         margin-bottom: 1rem;
         width: 100%;
 
@@ -33,8 +34,8 @@ main {
     &__text {
         margin: 0 auto;
         padding: 3%;
-        box-shadow: 20px 20px 20px rgba(0, 0, 0, 0.2);
-        width: 90%;
+        box-shadow: 20px 10px 20px rgba(0, 0, 0, 0.2);
+        width: 95%;
         text-align: left;
 
         & h3 {
@@ -44,12 +45,12 @@ main {
         }
 
         & p:nth-of-type(1) {
-            margin-bottom: 1rem;
+            margin-bottom: 1.5rem;
             font-weight: 300;
         }
 
         & p:nth-of-type(2) {
-            font-size: 0.7rem;
+            font-size: 0.8rem;
         }
 
         &__container {
@@ -58,8 +59,9 @@ main {
 
         &__hidden {
             position: absolute;
-            top: 50%;
-            transform: rotateX(120deg) rotateY(360deg);
+            top: 25%;
+            right: 0%;
+            transform: perspective(2000px) rotateY(150deg) translateZ(150px);;
             opacity: 0;
 
             & > a {

@@ -1,6 +1,6 @@
 const heroDescription = document.querySelector('.hero__description');
 const h2 = document.querySelector('.hero__about h2');
-const arrow = document.querySelector('.hero__description__img');
+const arrow = document.querySelector('.hero__description__arrow');
 const pia = document.querySelector('.hero__description--pia')
 const development = document.querySelector('.hero__development');
 
