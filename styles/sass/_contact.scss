@@ -1,4 +1,46 @@
 .form {
     position: absolute;
-    
-}
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: $black;
+    width: 50%;
+    padding: 4%;
+    background-color: white;
+    box-shadow: 0 10px 0 $forrest;
+    z-index: 999;
+  
+    & fieldset {
+      display: flex;
+      flex-direction: column;
+      border: none;
+  
+      & input,
+      & textarea {
+        padding: 4%;
+        background-color: white;
+        border: 3px solid $forrest;
+      }
+  
+      & input {
+        width: calc(100% - 15%);
+        padding: 4%;
+        margin: 0 5% 5% 0;
+        border: none;
+        border-bottom: 3px solid $forrest;
+      }
+  
+      & textarea {
+        height: 15vw;
+        margin-bottom: 2rem;
+      }
+    }
+  
+    &-container {
+      display: flex;
+    }
+  
+    &-comment {
+      height: 15vw;
+    }
+  }
