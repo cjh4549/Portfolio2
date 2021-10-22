@@ -297,39 +297,30 @@ fieldset {
 .arrow {
   display: flex;
   justify-content: center;
-  align-self: center;
-  flex-wrap: wrap;
-  height: 28px;
-  transition: transform 0.2s ease-in-out;
-  transform: translateY(-150deg);
-}
-.arrow-top {
-  display: block;
-  width: 25px;
-  height: 6px;
-  background: #86b68b;
-  transform: rotate(40deg);
-  border-radius: 100px;
-}
-.arrow-bottom {
-  display: block;
-  width: 25px;
-  height: 6px;
-  background: #86b68b;
-  transform: rotate(-40deg);
-  border-radius: 100px;
+  align-items: center;
+  width: 5%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 .arrow:hover, .arrow:focus {
-  transform: translateX(5px);
+  transform: translateX(10px);
 }
 
 .backArrow {
   display: flex;
   justify-content: center;
-  align-self: flex-start;
-  height: 40px;
-  transform: translate(-100%, 100%) rotateY(150deg);
+  align-items: center;
+  width: 5%;
   cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.backArrow:hover, .backArrow:focus {
+  transform: translateX(-10px);
+}
+
+.fa-angle-right,
+.fa-angle-double-left {
+  color: #86b68b;
 }
 
 @-webkit-keyframes slotMachine {
@@ -511,6 +502,7 @@ fieldset {
 }
 
 .about {
+  display: flex;
   overflow: hidden;
 }
 
