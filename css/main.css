@@ -294,6 +294,44 @@ fieldset {
   margin: 0 auto;
 }
 
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-self: center;
+  flex-wrap: wrap;
+  height: 28px;
+  transition: transform 0.2s ease-in-out;
+  transform: translateY(-150deg);
+}
+.arrow-top {
+  display: block;
+  width: 25px;
+  height: 6px;
+  background: #86b68b;
+  transform: rotate(40deg);
+  border-radius: 100px;
+}
+.arrow-bottom {
+  display: block;
+  width: 25px;
+  height: 6px;
+  background: #86b68b;
+  transform: rotate(-40deg);
+  border-radius: 100px;
+}
+.arrow:hover, .arrow:focus {
+  transform: translateX(5px);
+}
+
+.backArrow {
+  display: flex;
+  justify-content: center;
+  align-self: flex-start;
+  height: 40px;
+  transform: translate(-100%, 100%) rotateY(150deg);
+  cursor: pointer;
+}
+
 @-webkit-keyframes slotMachine {
   33% {
     transform: translateY(-2rem);
@@ -436,6 +474,7 @@ fieldset {
 .navbar__items {
   display: flex;
   height: 7vw;
+  cursor: pointer;
 }
 .navbar__items li:nth-of-type(1) {
   position: relative;

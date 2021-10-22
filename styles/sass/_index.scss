@@ -134,6 +134,7 @@
     &__items {
         display:flex;
         height: 7vw;
+        cursor: pointer;
         
         & li:nth-of-type(1) {
             position: relative;
