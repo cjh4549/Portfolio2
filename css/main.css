@@ -250,6 +250,7 @@ p {
 
 h2, h3 {
   font-family: "Sue Ellen Francisco", cursive;
+  letter-spacing: 2px;
 }
 
 p {
@@ -474,7 +475,7 @@ fieldset {
 .hero__left h2 {
   position: relative;
   display: inline-block;
-  font-size: 4rem;
+  font-size: 2.5rem;
   margin-bottom: 1rem;
 }
 .hero__left h2::before {
@@ -532,6 +533,7 @@ fieldset {
 .hero__development h3 {
   margin-bottom: 2rem;
   font-size: 3rem;
+  width: 110%;
 }
 .hero__devBox {
   display: flex;
@@ -560,14 +562,41 @@ fieldset {
 
 main {
   overflow: hidden;
+  height: 100vh;
 }
 
 .project {
+  opacity: 0;
   overflow: hidden;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  perspective: 1000px;
 }
 .project__mockup {
   width: 100%;
 }
 .project__mockup img {
   width: 20rem;
+}
+.project__card {
+  transform-style: preserve-3d;
+}
+.project__text h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0;
+  transform: translateZ(150px);
+}
+
+.projectOverlay {
+  opacity: 1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 20vw;
+  background: #F3EFCC;
+  z-index: 100;
 }
