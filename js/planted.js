@@ -23,7 +23,7 @@ tl.from(projectText, {opacity: 0, duration: 1, y: 50, ease: Power2.easeInOut});
 projectText.addEventListener('mouseenter', () => {
     projectText.style.transition = 'all 1s';
     projectText.style.transform = 'perspective(2000px) rotateX(10deg) rotateY(180deg) translateZ(50px)';
-    projectText.style.boxShadow = '5px 5px 10px rgba(0, 0, 0, 0.0)';
+    projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2)';
     projectText.style.opacity = '0.1';
     
     projectHidden.style.opacity = '1';
@@ -37,7 +37,7 @@ projectText.addEventListener('mouseenter', () => {
 projectCard.addEventListener('mouseleave', () => {
     projectText.style.transition = 'all 1s';
     projectText.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    projectText.style.boxShadow = '20px 10px 20px rgba(0, 0, 0, 0.1)';
+    projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2)';
     projectText.style.opacity = '1';
 
     projectHidden.style.opacity = '0.2';

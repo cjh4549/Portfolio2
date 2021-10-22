@@ -14,7 +14,6 @@ const vh = (height) => window.innerHeight * (height/100)
 
 const tl = new TimelineMax();
 
-
 tl.to(heroLeftBg, {duration: 1.2, delay: 0.3, x: -200, height: vh(170), width: vw(180), ease: Power2.easeInOut});
 tl.to(project, {opacity: 1, duration: -2});
 tl.to(projectOverlay, {height: 0, duration: 0.8, ease: Power2.easeOut});
@@ -24,7 +23,7 @@ tl.from(projectText, {opacity: 0, duration: 1, y: 50, ease: Power2.easeInOut});
 projectText.addEventListener('mouseenter', () => {
     projectText.style.transition = 'all 1s';
     projectText.style.transform = 'perspective(2000px) rotateX(10deg) rotateY(180deg) translateZ(50px)';
-    projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2);';
+    projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2)';
     projectText.style.opacity = '0.1';
     
     projectHidden.style.opacity = '1';
@@ -38,7 +37,7 @@ projectText.addEventListener('mouseenter', () => {
 projectCard.addEventListener('mouseleave', () => {
     projectText.style.transition = 'all 1s';
     projectText.style.transform = 'rotateX(0deg) rotateY(0deg)';
-    projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2);';
+    projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2)';
     projectText.style.opacity = '1';
 
     projectHidden.style.opacity = '0.2';
