@@ -691,6 +691,7 @@ main {
   background-color: white;
   box-shadow: 10px 10px 0 #86b68b;
   z-index: 999;
+  opacity: 0;
 }
 .form h3 {
   position: absolute;

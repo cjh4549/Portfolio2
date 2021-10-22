@@ -6,10 +6,11 @@ const development = document.querySelector('.hero__development');
 
 const tl = new TimelineMax();
 
-setTimeout(() => {
-    tl.from(h2, {duration: 0.8, opacity: 0, y: -50});
-    tl.from(heroDescription, {duration: 1, opacity: 0, x: 150});
-    tl.from(development, {duration: 1, opacity: 0, x: 100});
-    tl.from(arrow, {duration: 1, opacity: 0});
-    tl.from(pia, {duration: 2, opacity: 0, ease: Power2.easeOut});
-}, 2000);
+
+tl.from(h2, {duration: 0.8, opacity: 0, y: -50});
+tl.from(heroDescription, {duration: 1, opacity: 0, x: 150});
+tl.from(development, {duration: 1, opacity: 0, x: 100});
+tl.from(arrow, {duration: 1, opacity: 0});
+tl.from(pia, {duration: 2, opacity: 0, ease: Power2.easeOut});
+
+    

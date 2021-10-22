@@ -11,4 +11,4 @@ const vh = (height) => window.innerHeight * (height/100)
 const tl = new TimelineMax();
 
 tl.to(heroLeftBg, {duration: 1.2, delay: 0.3, x: -200, height: vh(150), width: vw(80), ease: Power2.easeInOut});
-tl.from(form, {duration: 1, opacity: 0});
+tl.to(form, {duration: 1, delay: 0.5, opacity: 1});
