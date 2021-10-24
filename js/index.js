@@ -13,9 +13,9 @@ const vh = (height) => window.innerHeight * (height/100)
 
 // Animation on initial load
 
-tl.from(heroLeftBg, {duration: 1.5, width: 0,  ease: Power2.easeOut});
-tl.from(".hero__left__text", {duration: 1, opacity: 0, x: 150});
-tl.from (".hero__right", {duration: 1, opacity: 0, y: 100})
+tl.from(heroLeftBg, {duration: 1, width: 0,  ease: Power2.easeOut});
+tl.from(".hero__left__text", {duration: 0.7, opacity: 0, x: 120});
+tl.from (".hero__right", {duration: 0.7, opacity: 0, y: 60})
 
 
 // Delay on links 
@@ -23,9 +23,9 @@ tl.from (".hero__right", {duration: 1, opacity: 0, y: 100})
 function delay (url) {
 
     beigeOverlay.style.opacity = 1;
-    beigeOverlay.style.transition = "all 1s";
+    beigeOverlay.style.transition = "all 0.5s";
     whiteOverlay.style.height = "150%";
-    whiteOverlay.style.transition = "all 1s ease";
+    whiteOverlay.style.transition = "all 0.5s ease";
 
     if (url == './html/contact.html') {
         tl.to(heroLeftBg, {duration: 1.2, delay: 0.3, x: -200, zIndex: 1000, height: vh(170), width: vw(180), ease: Power2.easeInOut});
@@ -33,6 +33,6 @@ function delay (url) {
 
     setTimeout(() => {
         window.location = url
-    }, 1500);
+    }, 700);
 
 }
