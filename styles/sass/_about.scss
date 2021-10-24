@@ -38,16 +38,6 @@
             height: 10vw;
             border-radius: 50%;
         }
-        
-        &__arrow {
-            transform: rotate(180deg);
-            transform: scaleX(-1);
-            position: absolute;
-            bottom: 14%;
-            right: 37%;
-            width: 9vw;
-            fill: $forrest;
-        }
 
         & p:nth-of-type(2) {
             position: absolute;

@@ -14,7 +14,7 @@ const vh = (height) => window.innerHeight * (height/100)
 
 const tl = new TimelineMax();
 
-tl.to(heroLeftBg, {duration: 1.2, delay: 0.3, x: -200, height: vh(170), width: vw(180), ease: Power2.easeInOut});
+tl.to(heroLeftBg, {duration: 0.8, delay: 0.2, x: -200, height: vh(170), width: vw(180), ease: Power2.easeInOut});
 tl.to(project, {opacity: 1, duration: -2});
 tl.to(projectOverlay, {height: 0, duration: 0.8, ease: Power2.easeOut});
 tl.from(projectText, {opacity: 0, duration: 1, y: 50, ease: Power2.easeInOut});
@@ -55,9 +55,6 @@ function delay (url) {
     
     projectTextContainer.style.opacity = '0'
     projectTextContainer.style.transition = 'all 0.7s';
-    
-    // projectOverlay.style.height = '100%'
-    // projectOverlay.style.transition = 'all 0.5s';
 
     setTimeout(() => {
         window.location = url
