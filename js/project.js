@@ -6,7 +6,6 @@ const projectTextContainer = document.querySelector('.project__text__container')
 const projectText = document.querySelector('.project__text');
 const projectHidden = document.querySelector('.project__text__hidden');
 const laptopOpen = document.querySelector('.project__mockup__open');
-const laptopClosed = document.querySelector('.project__mockup__closed');
 const nextArrow = document.querySelector('.arrow');
 
 const vw = (width) => window.innerWidth * (width/100)
@@ -50,14 +49,12 @@ projectCard.addEventListener('mouseleave', () => {
 
 function delay (url) {
     tl.to(laptopOpen, {opacity: 0, duration: 0.2});
-    tl.to(laptopClosed, {duration: 0.5, opacity: 1, top: 190});
-
     
     projectTextContainer.style.opacity = '0'
     projectTextContainer.style.transition = 'all 0.7s';
 
     setTimeout(() => {
         window.location = url
-    }, 1500);
+    }, 700);
 }
 
