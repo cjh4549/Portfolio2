@@ -535,15 +535,6 @@ fieldset {
   height: 10vw;
   border-radius: 50%;
 }
-.hero__description__arrow {
-  transform: rotate(180deg);
-  transform: scaleX(-1);
-  position: absolute;
-  bottom: 14%;
-  right: 37%;
-  width: 9vw;
-  fill: #86b68b;
-}
 .hero__description p:nth-of-type(2) {
   position: absolute;
   bottom: -10%;
@@ -692,6 +683,7 @@ main {
   box-shadow: 10px 10px 0 #86b68b;
   z-index: 999;
   opacity: 0;
+  border: 3px solid #F3EFCC;
 }
 .form h3 {
   position: absolute;
@@ -710,9 +702,17 @@ main {
   font-family: "Poppins", sans-serif;
 }
 .form fieldset button {
+  color: #2c2c2c;
   background-color: white;
-  padding: 1% 0;
-  border-radius: 5px;
+  padding: 1.5% 0;
+  border: 3px solid #86b68b;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+.form fieldset button:hover, .form fieldset button:focus {
+  background-color: #86b68b;
+  color: white;
+  cursor: pointer;
 }
 .form fieldset input, .form fieldset textarea {
   padding: 4%;
@@ -721,11 +721,14 @@ main {
   font-family: inherit;
 }
 .form fieldset input {
-  width: calc(100% - 15%);
+  width: 100%;
   padding: 4%;
   margin: 0 5% 5% 0;
   border: none;
   border-bottom: 3px solid #86b68b;
+}
+.form fieldset input:last-child {
+  margin: 0 0 5% 0;
 }
 .form fieldset textarea {
   height: 15vw;

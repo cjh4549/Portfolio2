@@ -21,16 +21,19 @@ tl.from(projectText, {opacity: 0, duration: 0.7, y: 30, ease: Power2.easeInOut})
 
 
 projectText.addEventListener('mouseenter', () => {
-    projectText.style.transition = 'all 1s';
-    projectText.style.transform = 'perspective(2000px) rotateX(10deg) rotateY(180deg) translateZ(50px)';
-    projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2)';
-    projectText.style.opacity = '0.1';
+    const cardFlip = function() {
+        projectText.style.transition = 'all 1s';
+        projectText.style.transform = 'perspective(2000px) rotateX(10deg) rotateY(180deg) translateZ(50px)';
+        projectText.style.boxShadow = '0px 2px 10px rgba(0, 0, 0, 0.2)';
+        projectText.style.opacity = '0.1';
+    }
+
+    cardFlip();
     
-    projectHidden.style.opacity = '1';
     projectHidden.style.transition = 'all 1s';
-    projectHidden.style.zIndex = '100';
-    projectHidden.style.transform = 'perspective(2000px) rotateX(0deg) rotateY(355deg) translateZ(50px)';
-    projectHidden.style.right = '50%';
+    projectHidden.style.transform = 'perspective(2000px) rotateX(0deg) rotateY(360deg) translateZ(50px)';
+    projectHidden.style.opacity = '1';
+    projectHidden.style.right = '55%';
     projectHidden.style.top = '5%';
 })
 

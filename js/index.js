@@ -36,3 +36,20 @@ function delay (url) {
     }, 700);
 
 }
+
+function contactDelay (url) {
+
+    beigeOverlay.style.opacity = 1;
+    beigeOverlay.style.transition = "all 1s";
+    whiteOverlay.style.height = "150%";
+    whiteOverlay.style.transition = "all 1s ease";
+
+    if (url == './html/contact.html') {
+        tl.to(heroLeftBg, {duration: 0.8, x: -200, zIndex: 1000, height: vh(170), width: vw(180), ease: Power2.easeInOut});
+    }
+
+    setTimeout(() => {
+        window.location = url
+    }, 800);
+
+}
