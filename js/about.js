@@ -5,7 +5,6 @@ const development = document.querySelector('.hero__development');
 
 const tl = new TimelineMax();
 
-
 tl.from(h2, {duration: 0.5, opacity: 0, y: -30});
 tl.from(heroDescription, {duration: 0.7, opacity: 0, x: 70});
 tl.from(development, {duration: 0.7, opacity: 0, x: 50});
