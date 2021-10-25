@@ -15,8 +15,8 @@ const tl = new TimelineMax();
 
 tl.to(heroLeftBg, {duration: 0.8, delay: 0.2, x: -200, height: vh(170), width: vw(180), ease: Power2.easeInOut});
 tl.to(project, {opacity: 1, duration: -2});
-tl.to(projectOverlay, {height: 0, duration: 0.8, ease: Power2.easeOut});
-tl.from(projectText, {opacity: 0, duration: 1, y: 50, ease: Power2.easeInOut});
+tl.to(projectOverlay, {height: 0, duration: 0.5, ease: Power2.easeOut});
+tl.from(projectText, {opacity: 0, duration: 0.8, y: 20, ease: Power2.easeInOut});
 
 
 projectText.addEventListener('mouseenter', () => {
@@ -48,10 +48,6 @@ projectCard.addEventListener('mouseleave', () => {
 
 
 function delay (url) {
-    tl.to(laptopOpen, {opacity: 0, duration: 0.2});
-    
-    projectTextContainer.style.opacity = '0'
-    projectTextContainer.style.transition = 'all 0.7s';
 
     setTimeout(() => {
         window.location = url
