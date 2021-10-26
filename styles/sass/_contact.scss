@@ -1,4 +1,7 @@
-.form {
+.contact {
+  width: 100%;
+
+  .form {
     position: absolute;
     top: 50%;
     left: 20%;
@@ -81,3 +84,16 @@
       height: 15vw;
     }
   }
+
+  .socialIcons {
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translate(-50%, -50%);
+    background-color: $forrest;
+    color: $white;
+    width: 20%;
+    height: 80%;
+  }
+}
+

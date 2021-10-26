@@ -23,32 +23,34 @@
                 </div>
             </div>
 
-            <form action="" class="form">
-                <h3>Contact</h3>
-                <fieldset>
-                    <div class="form-container">
-                        <label for="name" class="sr-only">Name</label>
-                        <input type="text" id="name" placeholder="Name">
+            <div class="contact">
+                <form action="https://formspree.io/f/xbjqeqnn" method="POST" class="form">
+                    <h3>Contact</h3>
+                    <fieldset>
+                        <div class="form-container">
+                            <label for="name" class="sr-only">Name</label>
+                            <input type="text" id="name" placeholder="Name">
 
-                        <label for="email" class="sr-only">Email Address</label>
-                        <input type="email" id="email" placeholder="Email address">
-                    </div>
-                    <label for="comment" class="sr-only">Comment</label>
-                    <textarea name="comment" id="comment" cols="20" rows="10" placeholder="Message"></textarea>
+                            <label for="email" class="sr-only">Email Address</label>
+                            <input type="email" name="_replyto" id="email" placeholder="Email address">
+                        </div>
+                        <label for="comment" class="sr-only">Comment</label>
+                        <textarea name="comment" name="message" id="comment" cols="20" rows="10"
+                            placeholder="Message"></textarea>
 
-                    <button type="submit" class="btn">Send Message</button>
-                </fieldset>
-            </form>
+                        <button type="submit" class="btn">Send Message</button>
+                    </fieldset>
+                </form>
 
-            <div class="socialIcons">
-                <ul>
-                    <li><a class="fab fa-github" href="https://github.com/cjh4549"><span
-                                class="sr-only">GitHub</span></a></li>
-                    <li><a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/jun-choi-6aa39214a/"><span
-                                class="sr-only">LinkedIn</span></a></li>
-                    <li><a class="fab fa-email" href="https://twitter.com/?lang=en"><span
-                                class="sr-only">Email</span></a></li>
-                </ul>
+                <div class="socialIcons">
+                    <ul>
+                        <li><a class="fab fa-github" href="https://github.com/cjh4549"><span
+                                    class="sr-only">GitHub</span></a></li>
+                        <li><a class="fab fa-linkedin-in" href="https://www.linkedin.com/in/jun-choi-6aa39214a/"><span
+                                    class="sr-only">LinkedIn</span></a></li>
+                        <li><a class="fas fa-envelope-square" href=""><span class="sr-only">Email</span></a></li>
+                    </ul>
+                </div>
             </div>
 
         </div>

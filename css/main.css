@@ -671,7 +671,10 @@ main {
   z-index: 100;
 }
 
-.form {
+.contact {
+  width: 100%;
+}
+.contact .form {
   position: absolute;
   top: 50%;
   left: 20%;
@@ -685,7 +688,7 @@ main {
   opacity: 0;
   border: 3px solid #F3EFCC;
 }
-.form h3 {
+.contact .form h3 {
   position: absolute;
   top: -2%;
   left: -3%;
@@ -693,15 +696,15 @@ main {
   transform: rotate(-10deg);
   letter-spacing: 5px;
 }
-.form fieldset {
+.contact .form fieldset {
   display: flex;
   flex-direction: column;
   border: none;
 }
-.form fieldset > * {
+.contact .form fieldset > * {
   font-family: "Poppins", sans-serif;
 }
-.form fieldset button {
+.contact .form fieldset button {
   color: #2c2c2c;
   background-color: #fff;
   padding: 1.5% 0;
@@ -709,34 +712,44 @@ main {
   letter-spacing: 2px;
   transition: all 0.2s;
 }
-.form fieldset button:hover, .form fieldset button:focus {
+.contact .form fieldset button:hover, .contact .form fieldset button:focus {
   background-color: #86b68b;
   color: #fff;
   cursor: pointer;
 }
-.form fieldset input, .form fieldset textarea {
+.contact .form fieldset input, .contact .form fieldset textarea {
   padding: 4%;
   background-color: #fff;
   border: 3px solid #86b68b;
   font-family: inherit;
 }
-.form fieldset input {
+.contact .form fieldset input {
   width: 100%;
   padding: 4%;
   margin: 0 5% 5% 0;
   border: none;
   border-bottom: 3px solid #86b68b;
 }
-.form fieldset input:last-child {
+.contact .form fieldset input:last-child {
   margin: 0 0 5% 0;
 }
-.form fieldset textarea {
+.contact .form fieldset textarea {
   height: 15vw;
   margin-bottom: 2rem;
 }
-.form-container {
+.contact .form-container {
   display: flex;
 }
-.form-comment {
+.contact .form-comment {
   height: 15vw;
+}
+.contact .socialIcons {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+  background-color: #86b68b;
+  color: #fff;
+  width: 20%;
+  height: 80%;
 }
