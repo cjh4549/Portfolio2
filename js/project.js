@@ -54,6 +54,6 @@ function delay (url) {
 
     setTimeout(() => {
         window.location = url
-    }, 700);
+    }, 150);
 }
 
