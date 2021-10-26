@@ -751,9 +751,8 @@ main {
   transform: translate(-50%, -50%);
   background-color: #86b68b;
   color: #fff;
-  width: 8%;
+  width: 6%;
   height: 50%;
-  font-size: 1.1rem;
 }
 .contact .socialIcons__container {
   display: flex;
