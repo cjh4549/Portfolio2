@@ -105,6 +105,10 @@
 
       & li {
         height: 1.8rem;
+
+        & a {
+          height: 1.8rem;
+        }
       }
 
       & li:hover,

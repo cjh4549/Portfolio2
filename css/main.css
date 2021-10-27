@@ -764,6 +764,9 @@ main {
 .contact .socialIcons__container li {
   height: 1.8rem;
 }
+.contact .socialIcons__container li a {
+  height: 1.8rem;
+}
 .contact .socialIcons__container li:hover, .contact .socialIcons__container li:focus {
   border-bottom: 4px solid #fff;
 }
