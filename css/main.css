@@ -523,26 +523,20 @@ fieldset {
   border-radius: 30%;
   background-color: #86b68b;
 }
-.hero__description {
-  position: relative;
+.hero__description p {
+  margin-bottom: 2rem;
 }
-.hero__description span {
-  display: inline-block;
-  font-size: 0.9rem;
+.hero__description a {
+  padding: 0.7rem;
+  border-radius: 100px;
+  background: #86b68b;
 }
-.hero__description img:nth-of-type(1) {
-  margin-top: 2rem;
-  height: 10vw;
-  border-radius: 50%;
-}
-.hero__description p:nth-of-type(2) {
-  position: absolute;
-  bottom: -10%;
-  font-family: "Sue Ellen Francisco", cursive;
-  font-size: 1.5rem;
-  left: 0%;
-  transform: rotate(-10deg);
-  letter-spacing: 5px;
+.hero__description a:hover, .hero__description a:focus {
+  height: 20%;
+  width: 20%;
+  color: #86b68b;
+  background-color: #fff;
+  transition: all 0.2s;
 }
 .hero__right {
   display: flex;
