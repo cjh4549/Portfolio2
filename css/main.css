@@ -765,3 +765,15 @@ main {
 .contact .socialIcons__container li:hover, .contact .socialIcons__container li:focus {
   border-bottom: 4px solid #fff;
 }
+
+@media (max-width: 1400px) {
+  .hero__left__bg {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100vw;
+    height: 100vw;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
