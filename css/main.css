@@ -774,6 +774,20 @@ main {
     width: 100vw;
     height: 100vw;
   }
+  .hero__left h1 {
+    font-size: 1.2rem;
+  }
+  .hero__left span {
+    font-size: 2rem;
+  }
+  .hero__intro p {
+    font-size: 0.8rem;
+  }
+}
+@media (max-width: 1300px) {
+  .hero__right__circle {
+    top: 26%;
+  }
 }
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
