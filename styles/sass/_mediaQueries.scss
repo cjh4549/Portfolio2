@@ -19,6 +19,16 @@
     &__intro p {
       font-size: 0.8rem;
     }
+
+    &__description {
+      & p {
+        font-size: 0.8rem;
+      }
+
+      & a {
+        font-size: 0.9rem;
+      }
+    }
   }
 }
 

@@ -783,6 +783,12 @@ main {
   .hero__intro p {
     font-size: 0.8rem;
   }
+  .hero__description p {
+    font-size: 0.8rem;
+  }
+  .hero__description a {
+    font-size: 0.9rem;
+  }
 }
 @media (max-width: 1300px) {
   .hero__right__circle {
