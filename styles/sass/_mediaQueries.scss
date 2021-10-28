@@ -23,11 +23,21 @@
     &__description {
       & p {
         font-size: 0.8rem;
+        margin-bottom: 1rem;
       }
 
       & a {
+        padding: 0.5rem;
         font-size: 0.9rem;
       }
+    }
+
+    &__development {
+      width: 85%;
+    }
+
+    &__devBox__container p {
+      font-size: 0.7rem;
     }
   }
 }
