@@ -54,20 +54,24 @@
 }
 
 .hamburger {
+  display: flex;
+  align-items: center;
   position: absolute;
   top: 5%;
   right: 5%;
   cursor: pointer;
+}
 
-  &.active .bar:nth-child(2) {
+.hamburgerNavBars {
+  &.active .bar:nth-of-type(2) {
     opacity: 0;
   }
 
-  &.active .bar:nth-child(1) {
+  &.active .bar:nth-of-type(1) {
     transform: translateY(8px) rotate(45deg);
   }
 
-  &.active .bar:nth-child(3) {
+  &.active .bar:nth-of-type(3) {
     transform: translateY(-8px) rotate(-45deg);
   }
 }
@@ -80,4 +84,16 @@
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   background-color: $black;
+}
+
+.hamburgerNavMenu {
+  &__items {
+    display: flex;
+
+    & li {
+      margin-right: 2rem;
+      opacity: 0;
+      transition: all 0.2s;
+    }
+  }
 }
