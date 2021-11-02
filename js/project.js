@@ -8,6 +8,11 @@ const projectHidden = document.querySelector('.project__text__hidden');
 const laptopOpen = document.querySelector('.project__mockup__open');
 const nextArrow = document.querySelector('.arrow');
 
+// Hamburger
+const hamburgerNavBars = document.querySelector('.hamburgerNavBars');
+const hamburgerNav = document.querySelector('.hamburgerNavMenu');
+const hamburgerNavMenu = document.querySelectorAll('.hamburgerNavMenu__items > li');
+
 const vw = (width) => window.innerWidth * (width/100)
 const vh = (height) => window.innerHeight * (height/100)
 
@@ -47,6 +52,24 @@ projectCard.addEventListener('mouseleave', () => {
     projectHidden.style.transform = 'rotateX(0deg) rotateY(155deg) translateZ(50px)';
     projectHidden.style.right = '10%';
     projectHidden.style.top = '1%';
+})
+
+// Hamburger Animations
+hamburgerNavBars.addEventListener('click', function(){
+    if (!hamburgerNavBars.classList.contains('active')) {
+        hamburgerNavBars.classList.add('active');
+        hamburgerNav.style.transform = 'translateX(-1.5rem)';
+        hamburgerNav.style.transition = 'all 0.5s';
+        hamburgerNavMenu.forEach(element => {
+            element.style.opacity = '1';
+        });
+    } else {
+        hamburgerNavBars.classList.remove('active');
+        hamburgerNav.style.transform = 'translateX(0px)';
+        hamburgerNavMenu.forEach(element => {
+            element.style.opacity = '0';
+        });
+    }
 })
 
 
