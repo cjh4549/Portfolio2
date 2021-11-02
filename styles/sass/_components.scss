@@ -1,54 +1,71 @@
 .skip-link {
-    position: absolute;
-    left: -1000px;
-    top: 5px;
-    z-index: 999;
-    background: white;
-    color: black;
-  }
-  
-  .skip-link:focus {
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  
-  .wrapper {
-    width: 80%;
-    height: 100%;
-    max-width: 1600px;
-    margin: 0 auto;
-  }
+  position: absolute;
+  left: -1000px;
+  top: 5px;
+  z-index: 999;
+  background: white;
+  color: black;
+}
 
-  .arrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5%;
-    transition: all 0.3s ease-in-out;
-    cursor: pointer;
+.skip-link:focus {
+  left: 50%;
+  transform: translateX(-50%);
+}
 
-    &:hover,
-    &:focus {
-      transform: translateX(10px);
-    }
+.wrapper {
+  width: 80%;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    transform: translateX(10px);
   }
+}
 
-  .backArrow {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 5%;
-    cursor: pointer;
-    transition: all .3s ease-in-out;
+.backArrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 5%;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
 
-    &:hover,
-    &:focus {
-      transform: translateX(-10px);
-    }
+  &:hover,
+  &:focus {
+    transform: translateX(-10px);
   }
+}
 
-  .fa-angle-right,
-  .fa-angle-double-left { 
-    font-size: 1.3rem;
-    color: $forrest;
-  }
+.fa-angle-right,
+.fa-angle-double-left {
+  font-size: 1.3rem;
+  color: $forrest;
+}
+
+.hamburger {
+  position: absolute;
+  top: 5%;
+  right: 5%;
+  cursor: pointer;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: $black;
+}
