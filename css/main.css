@@ -353,8 +353,28 @@ fieldset {
     transform: translateY(-6rem);
   }
 }
+.header {
+  overflow: hidden;
+}
+
+.navbar {
+  display: flex;
+  width: 65%;
+  justify-content: space-between;
+}
+.navbar__items {
+  display: flex;
+}
+.navbar__items li {
+  margin-right: 15%;
+}
+
 .hero {
-  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 90vh;
+  width: 50%;
   line-height: 1.5;
 }
 .hero h1 {
@@ -367,13 +387,13 @@ fieldset {
   font-size: calc( 40px + (60 - 40) * ((100vw - 300px) / (1600 - 300)) );
   font-weight: bold;
 }
-
 .hero__title {
   margin-bottom: 1rem;
   height: 2rem;
   overflow: hidden;
 }
 .hero__title--container {
+  width: 100vw;
   height: 100%;
   -webkit-animation: slotMachine 5s ease-in-out infinite alternate;
           animation: slotMachine 5s ease-in-out infinite alternate;
@@ -382,7 +402,18 @@ fieldset {
   display: flex;
   align-items: center;
   height: 2rem;
-  font-size: 1.2rem;
+  font-size: calc( 19px + (24 - 19) * ((100vw - 300px) / (1600 - 300)) );
   font-weight: bold;
+  color: #86b68b;
+}
+.hero .socialIcons ul {
+  display: flex;
+}
+.hero .socialIcons ul li {
+  margin: 2% 3% 0 0;
+}
+.hero .socialIcons ul li a {
+  display: block;
+  font-size: calc( 18px + (25 - 18) * ((100vw - 300px) / (1600 - 300)) );
   color: #86b68b;
 }
