@@ -1,0 +1,15 @@
+// Colours
+
+$black: #2c2c2c;
+$offWhite: #f0efed;
+$lightBeige: #f3efcc;
+$forrest: #86b68b;
+
+// Fluid typography
+
+@mixin fluid($min, $max, $min-vw) {
+  font-size: calc(
+    #{$min}px + (#{$max} - #{$min}) *
+      ((100vw - #{$min-vw}px) / (1600 - #{$min-vw}))
+  );
+}
