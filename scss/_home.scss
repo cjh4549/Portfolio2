@@ -4,14 +4,21 @@
 
 .navbar {
   display: flex;
-  width: 65%;
+  width: 50%;
   justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: $forrest;
+    @include fluid(20, 40, 300);
+  }
 
   &__items {
     display: flex;
 
     & li {
       margin-right: 15%;
+      @include fluid(16, 20, 300);
     }
   }
 }
@@ -62,7 +69,7 @@
       display: flex;
 
       & li {
-        margin: 2% 3% 0 0;
+        margin: 2% 5% 0 0;
       }
 
       & li a {

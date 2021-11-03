@@ -359,14 +359,20 @@ fieldset {
 
 .navbar {
   display: flex;
-  width: 65%;
+  width: 50%;
   justify-content: space-between;
+  align-items: center;
+}
+.navbar__logo {
+  color: #86b68b;
+  font-size: calc( 20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)) );
 }
 .navbar__items {
   display: flex;
 }
 .navbar__items li {
   margin-right: 15%;
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
 }
 
 .hero {
@@ -410,7 +416,7 @@ fieldset {
   display: flex;
 }
 .hero .socialIcons ul li {
-  margin: 2% 3% 0 0;
+  margin: 2% 5% 0 0;
 }
 .hero .socialIcons ul li a {
   display: block;
