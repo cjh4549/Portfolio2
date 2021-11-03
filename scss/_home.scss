@@ -5,11 +5,12 @@ body {
 .navbar {
   display: flex;
   padding: 2% 0;
-  width: 50%;
+  width: 30%;
   justify-content: space-between;
   align-items: center;
 
   &__logo {
+    margin-right: 20%;
     color: $forrest;
     @include fluid(20, 40, 300);
   }
@@ -20,6 +21,11 @@ body {
     & li {
       margin-right: 15%;
       @include fluid(16, 20, 300);
+
+      &:last-of-type a {
+        display: inline-block;
+        width: 150px;
+      }
     }
   }
 }
