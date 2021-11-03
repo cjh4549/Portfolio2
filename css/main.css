@@ -359,23 +359,8 @@ fieldset {
   height: 100vh;
 }
 .hero__left {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  flex: 1 0 50%;
   padding: 2rem;
   line-height: 1.5;
-}
-.hero__left__bg {
-  position: absolute;
-  top: -11%;
-  left: -35%;
-  -webkit-clip-path: circle(50% at 50% 50%);
-          clip-path: circle(50% at 50% 50%);
-  background-color: #f3efcc;
-  height: 65vw;
-  width: 75vw;
-  z-index: -1;
 }
 .hero__left h1 {
   font-size: 1.5rem;
