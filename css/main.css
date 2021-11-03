@@ -353,12 +353,13 @@ fieldset {
     transform: translateY(-6rem);
   }
 }
-.header {
+body {
   overflow: hidden;
 }
 
 .navbar {
   display: flex;
+  padding: 2% 0;
   width: 50%;
   justify-content: space-between;
   align-items: center;
@@ -379,9 +380,22 @@ fieldset {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  height: 90vh;
+  height: 80vh;
   width: 50%;
   line-height: 1.5;
+}
+.hero__bgCircle {
+  position: absolute;
+  left: -50%;
+  transform: translateX(50%);
+  background-color: #f3efcc;
+  width: 75%;
+  height: 200%;
+  border-radius: 50%;
+  z-index: -2;
+}
+.hero__text {
+  margin-bottom: 5%;
 }
 .hero h1 {
   font-size: calc( 20px + (30 - 20) * ((100vw - 300px) / (1600 - 300)) );
@@ -423,3 +437,7 @@ fieldset {
   font-size: calc( 18px + (25 - 18) * ((100vw - 300px) / (1600 - 300)) );
   color: #86b68b;
 }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
