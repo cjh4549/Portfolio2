@@ -236,3 +236,39 @@ body {
     }
   }
 }
+
+// Landscape
+
+@media (max-height: 650px) {
+  .navbar {
+    margin-bottom: 2rem;
+  }
+
+  .hero__bgCircle {
+    left: -80%;
+    width: 110%;
+  }
+}
+
+@media (max-height: 450px) {
+  .hero {
+    &__bgCircle {
+      width: 107vw;
+      height: 100vw;
+    }
+
+    &__text {
+      padding-top: 20%;
+    }
+  }
+
+  .navbar__items {
+    padding-top: 0;
+    position: initial;
+    flex-direction: row;
+  }
+
+  .hamburger {
+    display: none;
+  }
+}
