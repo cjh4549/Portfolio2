@@ -360,11 +360,11 @@ body {
 .projectsBg {
   position: absolute;
   background-image: url(../img/home-bg_4k.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -10;
 }
 
@@ -376,20 +376,21 @@ body {
   align-items: center;
 }
 .navbar__logo {
-  margin-right: 15%;
+  letter-spacing: 2px;
+  margin-right: 12%;
   color: #73a077;
-  font-size: calc( 20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)) );
+  font-size: calc( 20px + (45 - 20) * ((100vw - 300px) / (1600 - 300)) );
 }
 .navbar__items {
   display: flex;
 }
 .navbar__items li {
-  margin-right: 15%;
-  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
+  margin-right: 12%;
+  font-size: calc( 18px + (22 - 18) * ((100vw - 300px) / (1600 - 300)) );
 }
 .navbar__items li:last-of-type a {
   display: inline-block;
-  width: 150px;
+  width: 170px;
 }
 
 .hero {
@@ -398,16 +399,16 @@ body {
   flex-direction: column;
   margin-top: -7%;
   height: 100vh;
-  width: 50%;
+  width: 45%;
   line-height: 1.5;
 }
 .hero__bgCircle {
   position: absolute;
-  left: -50%;
+  left: -55%;
   transform: translateX(50%);
   background-color: #f3efcc;
   width: 75%;
-  height: 200%;
+  height: 180%;
   border-radius: 50%;
   z-index: -2;
 }
@@ -451,7 +452,7 @@ body {
 }
 .hero .socialIcons ul li a {
   display: block;
-  font-size: calc( 18px + (25 - 18) * ((100vw - 300px) / (1600 - 300)) );
+  font-size: calc( 25px + (30 - 25) * ((100vw - 300px) / (1600 - 300)) );
   color: #86b68b;
 }
 
@@ -464,7 +465,7 @@ body {
     height: 200%;
   }
 }
-/* Portrait tablet and small desktops */
+/* Landscape tablet and small desktops */
 @media (max-width: 940px) {
   .hero {
     width: 70%;

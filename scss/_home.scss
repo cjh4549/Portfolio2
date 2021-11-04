@@ -5,11 +5,11 @@ body {
 .projectsBg {
   position: absolute;
   background-image: url(../img/home-bg_4k.jpg);
-  background-repeat: no-repeat;
+  background-repeat: repeat;
   background-size: cover;
   background-position: center;
-  width: 100%;
-  height: 100%;
+  width: 100vw;
+  height: 100vh;
   z-index: -10;
 }
 
@@ -21,21 +21,22 @@ body {
   align-items: center;
 
   &__logo {
-    margin-right: 15%;
+    letter-spacing: 2px;
+    margin-right: 12%;
     color: $darkerForrest;
-    @include fluid(20, 40, 300);
+    @include fluid(20, 45, 300);
   }
 
   &__items {
     display: flex;
 
     & li {
-      margin-right: 15%;
-      @include fluid(16, 20, 300);
+      margin-right: 12%;
+      @include fluid(18, 22, 300);
 
       &:last-of-type a {
         display: inline-block;
-        width: 150px;
+        width: 170px;
       }
     }
   }
@@ -47,18 +48,18 @@ body {
   flex-direction: column;
   margin-top: -7%;
   height: 100vh;
-  width: 50%;
+  width: 45%;
   line-height: 1.5;
 
   // Circle in the background
 
   &__bgCircle {
     position: absolute;
-    left: -50%;
+    left: -55%;
     transform: translateX(50%);
     background-color: $lightBeige;
     width: 75%;
-    height: 200%;
+    height: 180%;
     border-radius: 50%;
     z-index: -2;
   }
@@ -116,7 +117,7 @@ body {
 
       & li a {
         display: block;
-        @include fluid(18, 25, 300);
+        @include fluid(25, 30, 300);
         color: $forrest;
       }
     }
@@ -136,7 +137,7 @@ body {
   }
 }
 
-/* Portrait tablet and small desktops */
+/* Landscape tablet and small desktops */
 @media (max-width: 940px) {
   .hero {
     width: 70%;
