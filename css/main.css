@@ -513,7 +513,13 @@ body {
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
   .hero {
+    width: 82%;
     padding-top: 0;
+  }
+  .hero__bgCircle {
+    left: -70%;
+    width: 100%;
+    height: 150%;
   }
 
   .navbar {
@@ -539,3 +545,14 @@ body {
   }
 }
 /* Landscape phones and down */
+@media (max-width: 480px) {
+  .hero {
+    width: 80%;
+    padding-top: 0;
+  }
+  .hero__bgCircle {
+    left: -80%;
+    width: 110%;
+    height: 140%;
+  }
+}
