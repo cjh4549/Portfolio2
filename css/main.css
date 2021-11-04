@@ -387,7 +387,7 @@ body {
   letter-spacing: 2px;
   margin-right: 10%;
   color: #73a077;
-  font-size: calc( 20px + (40 - 20) * ((100vw - 300px) / (1600 - 300)) );
+  font-size: calc( 18px + (40 - 18) * ((100vw - 300px) / (1600 - 300)) );
 }
 .navbar__items {
   display: flex;
@@ -556,7 +556,24 @@ body {
     height: 150%;
   }
 }
+@media (max-width: 380px) {
+  .navbar {
+    margin-bottom: 2rem;
+  }
+
+  .hero__text {
+    margin-bottom: 15%;
+  }
+}
 @media (max-height: 650px) {
+  body {
+    overflow: scroll;
+  }
+
+  .projectsBg {
+    height: 105vw;
+  }
+
   .navbar {
     margin-bottom: 2rem;
   }
@@ -583,5 +600,11 @@ body {
 
   .hamburger {
     display: none;
+  }
+}
+@media (max-height: 380px) {
+  .hero__bgCircle {
+    width: 117vw;
+    height: 120vw;
   }
 }
