@@ -87,7 +87,7 @@ body {
   // Rotating self-descriptions
 
   &__title {
-    margin-bottom: 1rem;
+    margin-bottom: 3%;
     height: 2rem;
     overflow: hidden;
 
@@ -164,6 +164,23 @@ body {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .navbar {
+    &__logo {
+      display: none;
+    }
+
+    &__items {
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      left: -100%;
+    }
+  }
+
+  .hamburger {
+    display: block;
+    @include fluid(25, 30, 300);
+  }
 }
 
 /* Landscape phones and down */
