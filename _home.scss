@@ -34,7 +34,7 @@ body {
 
     & li {
       margin-right: 10%;
-      @include fluid(16, 22, 300);
+      @include fluid(18, 22, 300);
 
       &:last-of-type a {
         display: inline-block;
@@ -44,6 +44,20 @@ body {
   }
 }
 
+.hamburger {
+  position: relative;
+}
+
+.fa-times {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include fluid(30, 55, 300);
+  opacity: 0;
+}
+
+// Hero Container
+
 .hero {
   display: flex;
   justify-content: center;
@@ -52,6 +66,7 @@ body {
   height: 100vh;
   width: 45%;
   line-height: 1.5;
+  padding-top: 5%;
 
   // Circle in the background
 
@@ -126,6 +141,13 @@ body {
   }
 }
 
+// Javascript transitions
+
+.hamburgerOpen {
+  transition: all 0.8s;
+  left: 50% !important;
+}
+
 // Media Queries
 
 @media (max-width: 1400px) {
@@ -164,22 +186,33 @@ body {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
+  .hero {
+    padding-top: 0;
+  }
+
   .navbar {
+    left: -4%;
+
     &__logo {
       display: none;
     }
 
     &__items {
+      padding-top: 6rem;
       position: absolute;
       display: flex;
       flex-direction: column;
-      left: -100%;
+      left: -300%;
+
+      & li {
+        margin-bottom: 10%;
+      }
     }
   }
 
   .hamburger {
     display: block;
-    @include fluid(25, 30, 300);
+    @include fluid(30, 40, 300);
   }
 }
 
