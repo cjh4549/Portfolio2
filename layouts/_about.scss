@@ -1,0 +1,60 @@
+// Dev tools
+
+.development {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+
+  & h3 {
+    margin-bottom: 2rem;
+    font-size: 2rem;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-transform: uppercase;
+    width: 25%;
+    margin: 3%;
+
+    & img {
+      height: 3vw;
+    }
+
+    & p {
+      font-size: 0.8rem;
+      text-align: center;
+    }
+  }
+}
+
+.devBox {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  font-size: 0.9rem;
+  text-decoration: none;
+  text-transform: lowercase;
+}
+
+// Social icons
+
+.socialIcons {
+  & ul {
+    display: flex;
+
+    & li {
+      margin: 2% 8% 0 0;
+    }
+
+    & li a {
+      display: block;
+      @include fluid(30, 35, 300);
+      color: $forrest;
+    }
+  }
+}
