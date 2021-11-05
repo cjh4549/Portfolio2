@@ -42,7 +42,7 @@
 
     & li {
       margin-right: 10%;
-      @include fluid(18, 22, 300);
+      @include fluid(18, 20, 300);
 
       &:last-of-type a {
         display: inline-block;
