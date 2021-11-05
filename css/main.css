@@ -610,6 +610,10 @@ main .wrapper {
   display: flex;
 }
 
+.left {
+  width: 60%;
+}
+
 .profile {
   height: 20vw;
 }
@@ -624,7 +628,7 @@ main .wrapper {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 50%;
+  height: 20%;
 }
 .development h3 {
   margin-bottom: 1rem;
@@ -656,7 +660,26 @@ main .wrapper {
 }
 
 .about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
   width: 50%;
+}
+.about__text h2 {
+  margin-bottom: 1rem;
+}
+.about__description p {
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
+  margin-bottom: 1rem;
+}
+.about__description a {
+  border-bottom: 4px solid #86b68b;
+  transition: background-color 0.5s;
+}
+.about__description a:hover, .about__description a:focus {
+  background-color: #86b68b;
+  color: #fff;
 }
 
 .socialIcons ul {
