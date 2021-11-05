@@ -19,6 +19,51 @@
   margin: 0 auto;
 }
 
+// Navbar
+
+.navbar {
+  position: relative;
+  left: -7%;
+  display: flex;
+  padding: 2rem 0 0 0;
+  width: 30%;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    letter-spacing: 2px;
+    margin-right: 10%;
+    color: $darkerForrest;
+    @include fluid(18, 40, 300);
+  }
+
+  &__items {
+    display: flex;
+
+    & li {
+      margin-right: 10%;
+      @include fluid(18, 22, 300);
+
+      &:last-of-type a {
+        display: inline-block;
+        width: 170px;
+      }
+    }
+  }
+}
+
+.hamburger {
+  position: relative;
+}
+
+.fa-times {
+  position: absolute;
+  top: 0;
+  left: 0;
+  @include fluid(30, 55, 300);
+  opacity: 0;
+}
+
 .hamburger {
   display: none;
   cursor: pointer;
