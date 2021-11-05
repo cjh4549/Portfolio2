@@ -76,6 +76,17 @@ main .wrapper {
   justify-content: center;
   width: 40%;
 
+  &__bgCircle {
+    position: absolute;
+    right: 15%;
+    transform: translateX(50%);
+    background-color: $lightBeige;
+    width: 75%;
+    height: 180%;
+    border-radius: 50%;
+    z-index: -2;
+  }
+
   &__text {
     margin-bottom: 1.5rem;
 
