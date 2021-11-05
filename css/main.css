@@ -610,6 +610,15 @@ main .wrapper {
   display: flex;
 }
 
+.profile {
+  height: 20vw;
+}
+.profile img {
+  height: 100%;
+  background-color: #86b68b;
+  border-radius: 50%;
+}
+
 .development {
   display: flex;
   flex-direction: column;

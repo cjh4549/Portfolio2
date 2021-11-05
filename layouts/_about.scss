@@ -2,6 +2,18 @@ main .wrapper {
   display: flex;
 }
 
+// Left side section
+
+.profile {
+  height: 20vw;
+
+  & img {
+    height: 100%;
+    background-color: $forrest;
+    border-radius: 50%;
+  }
+}
+
 // Dev tools
 
 .development {
