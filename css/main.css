@@ -696,12 +696,12 @@ main .wrapper {
 .about__description p:last-of-type {
   margin-bottom: 1.8rem;
 }
-.about__description a {
+.about__description a, .about__description a:visited {
   border-bottom: 4px solid #86b68b;
   padding: 0.3rem;
   transition: background-color 0.2s;
 }
-.about__description a:hover, .about__description a:focus {
+.about__description a:hover, .about__description a:focus, .about__description a:visited:hover, .about__description a:visited:focus {
   background-color: #86b68b;
   color: #fff;
 }

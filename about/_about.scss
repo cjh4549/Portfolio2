@@ -106,7 +106,8 @@ main .wrapper {
       margin-bottom: 1.8rem;
     }
 
-    & a {
+    & a,
+    & a:visited {
       border-bottom: 4px solid $forrest;
       padding: 0.3rem;
       transition: background-color 0.2s;
