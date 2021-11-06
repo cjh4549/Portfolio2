@@ -213,8 +213,55 @@ main .wrapper {
   .about {
     width: 100%;
   }
+
+  .left {
+    width: 110%;
+  }
+
+  .profile img {
+    width: 30vw;
+  }
+
+  .development__box {
+    width: 100%;
+
+    & img {
+      height: 3.5vw;
+    }
+  }
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
+  .left {
+    width: 100%;
+    flex-direction: column;
+    margin: 5rem 0;
+  }
+
+  .profile img {
+    width: 40vw;
+  }
+
+  .development__box img {
+    height: 7.5vw;
+  }
+
+  .about__bgCircle {
+    top: -70%;
+  }
+}
+
+@media (max-width: 375px) {
+  .about__bgCircle {
+    top: -65%;
+  }
+
+  .left {
+    margin: 3rem 0;
+  }
+
+  .profile img {
+    width: 50vw;
+  }
 }
