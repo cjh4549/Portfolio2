@@ -20,7 +20,7 @@ main .wrapper {
 
   & img {
     height: 100%;
-    width: 14vw;
+    width: 13.5vw;
     background-color: $forrest;
     border-radius: 50%;
   }
@@ -147,12 +147,37 @@ main .wrapper {
 }
 
 @media (max-width: 1200px) {
+  .about__description p {
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+  }
 }
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  .main {
+    height: 100vh;
+  }
+
+  .left {
+    justify-content: center;
+  }
+
+  .profile {
+    height: 20vh;
+    width: 22vw;
+
+    & img {
+      height: 20vw;
+    }
+  }
+
   .development__container {
     margin: 1% 10%;
+  }
+
+  .about {
+    margin-bottom: 2rem;
   }
 }
 
