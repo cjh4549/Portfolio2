@@ -564,7 +564,7 @@ body {
   }
 }
 @media (max-height: 650px) {
-  body {
+  .home {
     overflow: scroll;
   }
 
@@ -731,7 +731,7 @@ main .wrapper {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  body {
+  .aboutBody {
     overflow-y: scroll;
     overflow-x: hidden;
   }
@@ -817,11 +817,13 @@ main .wrapper {
 
   .about__bgCircle {
     top: -70%;
+    width: 300%;
+    left: -100%;
   }
 }
-@media (max-width: 375px) {
+@media (max-width: 380px) {
   .about__bgCircle {
-    top: -65%;
+    top: -60%;
   }
 
   .left {
