@@ -731,29 +731,57 @@ main .wrapper {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  .main {
-    height: 100vh;
+  body {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  main .wrapper {
+    flex-direction: column-reverse;
   }
 
   .left {
-    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    padding-right: 0;
+    justify-content: space-evenly;
+    width: 100%;
+    margin: 6rem 0;
   }
 
   .profile {
-    height: 20vh;
-    width: 22vw;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
   }
   .profile img {
-    height: 20vw;
+    width: 25vw;
   }
 
+  .development__box {
+    width: 80%;
+  }
   .development__container {
-    margin: 1% 10%;
+    margin: 1% 6%;
   }
 
   .about {
-    margin-bottom: 2rem;
+    margin: 4rem 0;
+    width: 85%;
+  }
+  .about__bgCircle {
+    right: 0;
+    transform: translateX(0);
+    width: 200%;
+    top: -85%;
+    left: -55%;
   }
 }
 /* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .about {
+    width: 100%;
+  }
+}
 /* Landscape phones and down */
