@@ -1,3 +1,45 @@
-.projectBody {
+.project {
   background: $lightBeige;
+
+  &__main {
+    display: flex;
+    min-height: 85vh;
+
+    & .backArrow {
+      display: flex;
+      align-items: center;
+    }
+
+    & .forwardArrow {
+      display: flex;
+      align-items: center;
+    }
+  }
+
+  &__slider {
+    display: flex;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    &__img {
+      width: 50%;
+    }
+
+    &__description {
+      width: 40%;
+      padding: 1.5rem;
+      background-color: $forrest;
+      border-radius: 5%;
+
+      & p:last-of-type {
+        display: flex;
+        align-self: flex-end;
+      }
+    }
+  }
 }

@@ -830,6 +830,40 @@ main .wrapper {
     width: 50vw;
   }
 }
-.projectBody {
+.project {
   background: #f3efcc;
+}
+.project__main {
+  display: flex;
+  min-height: 85vh;
+}
+.project__main .backArrow {
+  display: flex;
+  align-items: center;
+}
+.project__main .forwardArrow {
+  display: flex;
+  align-items: center;
+}
+.project__slider {
+  display: flex;
+}
+.project__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.project__container__img {
+  width: 50%;
+}
+.project__container__description {
+  width: 40%;
+  padding: 1.5rem;
+  background-color: #86b68b;
+  border-radius: 5%;
+}
+.project__container__description p:last-of-type {
+  display: flex;
+  align-self: flex-end;
 }
