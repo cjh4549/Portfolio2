@@ -668,6 +668,7 @@ main .wrapper {
 }
 
 .about {
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -675,13 +676,12 @@ main .wrapper {
 }
 .about__bgCircle {
   position: absolute;
-  right: 15%;
-  transform: translateX(50%);
   background-color: #f3efcc;
-  width: 75%;
-  height: 180%;
-  border-radius: 50%;
+  width: 200%;
+  height: 200%;
+  border-radius: 50% 0% 0% 50%/50% 0% 0% 50%;
   z-index: -2;
+  left: -30%;
 }
 .about__text {
   margin-bottom: 1.5rem;
@@ -731,8 +731,7 @@ main .wrapper {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  .aboutBody {
-    overflow-y: scroll;
+  html {
     overflow-x: hidden;
   }
 
@@ -771,11 +770,7 @@ main .wrapper {
     width: 85%;
   }
   .about__bgCircle {
-    right: 0;
-    transform: translateX(0);
-    width: 200%;
-    top: -115%;
-    left: -55%;
+    border-radius: 100% 0% 50% 50%/0% 0% 100% 100%;
   }
 }
 /* Landscape phone to portrait tablet */
@@ -816,16 +811,13 @@ main .wrapper {
   }
 
   .about__bgCircle {
-    top: -70%;
-    width: 300%;
-    left: -100%;
+    border-radius: 100% 0% 80% 80%/0% 0% 100% 100%;
+    height: 150%;
+    left: -50%;
+    top: -50%;
   }
 }
 @media (max-width: 380px) {
-  .about__bgCircle {
-    top: -60%;
-  }
-
   .left {
     margin: 3rem 0;
   }
