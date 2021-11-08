@@ -732,7 +732,7 @@ main .wrapper {
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
   html {
-    overflow-x: hidden;
+    overflow: hidden;
   }
 
   main .wrapper {
