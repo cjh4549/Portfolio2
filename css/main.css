@@ -396,7 +396,7 @@ fieldset {
     transform: translateY(-6rem);
   }
 }
-body {
+.home {
   overflow: hidden;
 }
 
@@ -606,6 +606,10 @@ body {
     height: 120vw;
   }
 }
+.aboutBody {
+  overflow-x: hidden;
+}
+
 main .wrapper {
   display: flex;
   justify-content: space-between;
@@ -731,10 +735,6 @@ main .wrapper {
 }
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
-  html {
-    overflow: hidden;
-  }
-
   main .wrapper {
     flex-direction: column-reverse;
   }
