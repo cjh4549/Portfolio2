@@ -608,6 +608,7 @@ fieldset {
 }
 .aboutBody {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 main .wrapper {
@@ -846,15 +847,15 @@ main .wrapper {
   display: flex;
   min-height: 85vh;
 }
-.project__main .backArrow {
+.project__main .glider-prev {
   display: flex;
   align-items: center;
 }
-.project__main .forwardArrow {
+.project__main .glider-next {
   display: flex;
   align-items: center;
 }
-.project__slider {
+.project__glider {
   display: flex;
 }
 .project__container {
@@ -865,14 +866,49 @@ main .wrapper {
 }
 .project__container__img {
   width: 50%;
+  margin-right: 2rem;
+}
+.project__container__text {
+  width: 40%;
 }
 .project__container__description {
-  width: 40%;
   padding: 1.5rem;
   background-color: #86b68b;
   border-radius: 5%;
+  color: #fff;
+}
+.project__container__description p:first-of-type {
+  margin: 1rem 0;
+  font-size: calc( 18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)) );
 }
 .project__container__description p:last-of-type {
   display: flex;
   align-self: flex-end;
+  font-size: calc( 15px + (16 - 15) * ((100vw - 300px) / (1600 - 300)) );
 }
+.project__container__links {
+  padding-left: 1rem;
+  margin-top: 1rem;
+}
+.project__container__links a {
+  margin-right: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .project__container__img {
+    width: 60%;
+  }
+}
+@media (max-width: 940px) {
+  .project__container {
+    flex-direction: column;
+  }
+  .project__container__img {
+    margin: 2rem;
+  }
+  .project__container__text {
+    width: 80%;
+  }
+}
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */

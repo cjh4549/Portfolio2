@@ -5,18 +5,18 @@
     display: flex;
     min-height: 85vh;
 
-    & .backArrow {
+    .glider-prev {
       display: flex;
       align-items: center;
     }
 
-    & .forwardArrow {
+    .glider-next {
       display: flex;
       align-items: center;
     }
   }
 
-  &__slider {
+  &__glider {
     display: flex;
   }
 
@@ -28,18 +28,70 @@
 
     &__img {
       width: 50%;
+      margin-right: 2rem;
+    }
+
+    &__text {
+      width: 40%;
     }
 
     &__description {
-      width: 40%;
       padding: 1.5rem;
       background-color: $forrest;
       border-radius: 5%;
+      color: $offWhite;
+
+      & p:first-of-type {
+        margin: 1rem 0;
+        @include fluid(18, 20, 300);
+      }
 
       & p:last-of-type {
         display: flex;
         align-self: flex-end;
+        @include fluid(15, 16, 300);
+      }
+    }
+
+    &__links {
+      padding-left: 1rem;
+      margin-top: 1rem;
+
+      & a {
+        margin-right: 1rem;
       }
     }
   }
+}
+
+// Media Queries
+
+@media (max-width: 1200px) {
+  .project__container__img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 940px) {
+  .project {
+    &__container {
+      flex-direction: column;
+
+      &__img {
+        margin: 2rem;
+      }
+
+      &__text {
+        width: 80%;
+      }
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }
