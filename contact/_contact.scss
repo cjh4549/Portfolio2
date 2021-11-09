@@ -1,0 +1,142 @@
+.contactBody {
+  overflow-y: hidden;
+}
+
+.contact__wrapper {
+  width: 80%;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+
+  &::before {
+    content: "";
+    position: absolute;
+    background-color: $lightBeige;
+    width: 50%;
+    height: 120%;
+    top: -10%;
+    left: 0;
+    border-radius: 0 50% 50% 0;
+    z-index: -2;
+  }
+}
+
+.contact {
+  width: 100%;
+
+  .form {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-20%, -50%);
+    color: $black;
+    width: 50%;
+    padding: 4%;
+    background-color: $offWhite;
+    box-shadow: 10px 10px 0 $forrest;
+    z-index: 999;
+    border: 3px solid $lightBeige;
+
+    & h2 {
+      position: absolute;
+      top: -2%;
+      left: -3%;
+      @include fluid(25, 40, 300);
+      transform: rotate(-10deg);
+      letter-spacing: 5px;
+    }
+
+    & fieldset {
+      display: flex;
+      flex-direction: column;
+      border: none;
+
+      & > * {
+        font-family: "Poppins", sans-serif;
+      }
+
+      & button {
+        color: $black;
+        background-color: $offWhite;
+        padding: 1.5% 0;
+        border: 3px solid $forrest;
+        letter-spacing: 2px;
+        transition: all 0.2s;
+
+        &:hover,
+        &:focus {
+          background-color: $forrest;
+          color: $offWhite;
+          cursor: pointer;
+        }
+      }
+
+      & input,
+      & textarea {
+        padding: 4%;
+        background-color: $offWhite;
+        border: 3px solid $forrest;
+        font-family: inherit;
+      }
+
+      & input {
+        width: 100%;
+        padding: 4%;
+        margin: 0 5% 5% 0;
+        border: none;
+        border-bottom: 3px solid $forrest;
+
+        &:last-child {
+          margin: 0 0 5% 0;
+        }
+      }
+
+      & textarea {
+        height: 15vw;
+        margin-bottom: 2rem;
+      }
+    }
+
+    &-container {
+      display: flex;
+    }
+
+    &-comment {
+      height: 15vw;
+    }
+  }
+}
+
+.contact__socialIcons {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  background-color: $forrest;
+  color: $offWhite;
+  width: 6%;
+  height: 50%;
+
+  &__container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-items: center;
+    width: 30%;
+
+    & li {
+      height: 1.8rem;
+
+      & a {
+        height: 1.8rem;
+      }
+    }
+
+    & li:hover,
+    & li:focus {
+      border-bottom: 4px solid $offWhite;
+    }
+  }
+}

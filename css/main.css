@@ -907,7 +907,7 @@ main .wrapper {
 
 @media (max-width: 1200px) {
   .project__container__img {
-    width: 60%;
+    width: 40%;
   }
 }
 @media (max-width: 940px) {
@@ -923,3 +923,125 @@ main .wrapper {
 }
 /* Landscape phone to portrait tablet */
 /* Landscape phones and down */
+.contactBody {
+  overflow-y: hidden;
+}
+
+.contact__wrapper {
+  width: 80%;
+  height: 100%;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+.contact__wrapper::before {
+  content: "";
+  position: absolute;
+  background-color: #f3efcc;
+  width: 50%;
+  height: 120%;
+  top: -10%;
+  left: 0;
+  border-radius: 0 50% 50% 0;
+  z-index: -2;
+}
+
+.contact {
+  width: 100%;
+}
+.contact .form {
+  position: absolute;
+  top: 50%;
+  left: 20%;
+  transform: translate(-20%, -50%);
+  color: #2c2c2c;
+  width: 50%;
+  padding: 4%;
+  background-color: #fff;
+  box-shadow: 10px 10px 0 #86b68b;
+  z-index: 999;
+  border: 3px solid #f3efcc;
+}
+.contact .form h2 {
+  position: absolute;
+  top: -2%;
+  left: -3%;
+  font-size: calc( 25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)) );
+  transform: rotate(-10deg);
+  letter-spacing: 5px;
+}
+.contact .form fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+}
+.contact .form fieldset > * {
+  font-family: "Poppins", sans-serif;
+}
+.contact .form fieldset button {
+  color: #2c2c2c;
+  background-color: #fff;
+  padding: 1.5% 0;
+  border: 3px solid #86b68b;
+  letter-spacing: 2px;
+  transition: all 0.2s;
+}
+.contact .form fieldset button:hover, .contact .form fieldset button:focus {
+  background-color: #86b68b;
+  color: #fff;
+  cursor: pointer;
+}
+.contact .form fieldset input, .contact .form fieldset textarea {
+  padding: 4%;
+  background-color: #fff;
+  border: 3px solid #86b68b;
+  font-family: inherit;
+}
+.contact .form fieldset input {
+  width: 100%;
+  padding: 4%;
+  margin: 0 5% 5% 0;
+  border: none;
+  border-bottom: 3px solid #86b68b;
+}
+.contact .form fieldset input:last-child {
+  margin: 0 0 5% 0;
+}
+.contact .form fieldset textarea {
+  height: 15vw;
+  margin-bottom: 2rem;
+}
+.contact .form-container {
+  display: flex;
+}
+.contact .form-comment {
+  height: 15vw;
+}
+
+.contact__socialIcons {
+  display: flex;
+  justify-content: space-evenly;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translate(-50%, -50%);
+  background-color: #86b68b;
+  color: #fff;
+  width: 6%;
+  height: 50%;
+}
+.contact__socialIcons__container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+}
+.contact__socialIcons__container li {
+  height: 1.8rem;
+}
+.contact__socialIcons__container li a {
+  height: 1.8rem;
+}
+.contact__socialIcons__container li:hover, .contact__socialIcons__container li:focus {
+  border-bottom: 4px solid #fff;
+}
