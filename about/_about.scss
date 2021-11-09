@@ -146,6 +146,10 @@ main .wrapper {
 // Media Queries
 
 @media (max-width: 1350px) {
+  .aboutBody {
+    overflow: hidden;
+  }
+
   .development__container {
     margin: 1% 8%;
   }
@@ -160,6 +164,11 @@ main .wrapper {
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {
+  .aboutBody {
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
   main .wrapper {
     flex-direction: column-reverse;
   }
