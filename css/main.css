@@ -840,11 +840,8 @@ main .wrapper {
     width: 50vw;
   }
 }
-html {
-  overflow-x: hidden;
-}
-
 .project {
+  overflow-x: hidden;
   background: #f3efcc;
 }
 .project__main {
