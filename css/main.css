@@ -840,6 +840,10 @@ main .wrapper {
     width: 50vw;
   }
 }
+html {
+  overflow-x: hidden;
+}
+
 .project {
   background: #f3efcc;
 }
@@ -857,6 +861,7 @@ main .wrapper {
 }
 .project__glider {
   display: flex;
+  overflow-x: hidden;
 }
 .project__container {
   display: flex;
