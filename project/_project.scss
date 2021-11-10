@@ -5,16 +5,6 @@
   &__main {
     display: flex;
     min-height: 85vh;
-
-    .glider-prev {
-      display: flex;
-      align-items: center;
-    }
-
-    .glider-next {
-      display: flex;
-      align-items: center;
-    }
   }
 
   &__glider {
@@ -29,9 +19,13 @@
     align-items: center;
     width: 100%;
 
-    &:first-of-type img {
+    &:first-of-type {
       padding-left: 2rem;
-      margin-right: 5rem;
+
+      & img {
+        padding-left: 2rem;
+        margin-right: 5rem;
+      }
     }
 
     &__img {

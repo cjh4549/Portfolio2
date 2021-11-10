@@ -848,14 +848,6 @@ main .wrapper {
   display: flex;
   min-height: 85vh;
 }
-.project__main .glider-prev {
-  display: flex;
-  align-items: center;
-}
-.project__main .glider-next {
-  display: flex;
-  align-items: center;
-}
 .project__glider {
   display: flex;
   overflow-x: hidden;
@@ -866,6 +858,9 @@ main .wrapper {
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+.project__container:first-of-type {
+  padding-left: 2rem;
 }
 .project__container:first-of-type img {
   padding-left: 2rem;

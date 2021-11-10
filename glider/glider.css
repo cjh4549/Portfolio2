@@ -1,6 +1,6 @@
 .glider,
 .glider-contain {
-  margin: 0 auto;
+  margin: 0 -1rem;
   position: relative;
 }
 .glider,
@@ -16,7 +16,7 @@
   outline: 0;
 }
 .glider-contain {
-  width: 100%;
+  width: 95%;
 }
 .glider {
   overflow-y: hidden;
