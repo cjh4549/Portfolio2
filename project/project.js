@@ -9,13 +9,13 @@ new Glider(document.querySelector('.project__glider'), {
     },
     responsive: [
         {
-          // screens greater than >= value
+          // screens greater than >= 1200px
           breakpoint: 1200,
           settings: {
             // Set to `auto` and provide item width to adjust to viewport
             slidesToShow: 1,
             slidesToScroll: 'auto',
-            itemWidth: 100,
+            itemWidth: 3000,
             duration: 0.25
           }
     },
@@ -23,9 +23,8 @@ new Glider(document.querySelector('.project__glider'), {
         // screens greater than >= 1024px
         breakpoint: 1024,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          itemWidth: 150,
+          slidesToShow:  'auto',
+          slidesToScroll: 'auto',
           duration: 0.25
         }
       }
