@@ -995,7 +995,7 @@ main .wrapper {
   background-color: #fff;
   border: 3px solid #86b68b;
   font-family: inherit;
-  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
+  font-size: calc( 15px + (20 - 15) * ((100vw - 300px) / (1600 - 300)) );
 }
 .contact .form fieldset input {
   width: 100%;
@@ -1150,5 +1150,31 @@ main .wrapper {
   .contact__socialIcons__container li a {
     display: flex;
     align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  .contact__wrapper::before {
+    width: 100%;
+  }
+
+  .contact .form {
+    padding: 5%;
+    margin-left: 0;
+  }
+
+  .contact .form fieldset textarea {
+    height: 65vw;
+  }
+  .contact .form fieldset > * {
+    width: 100%;
+  }
+
+  .contact__socialIcons {
+    width: 75%;
+  }
+}
+@media (max-width: 370px) {
+  .contact .form fieldset textarea {
+    height: 80vw;
   }
 }
