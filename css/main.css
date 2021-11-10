@@ -776,7 +776,7 @@ main .wrapper {
   }
 
   .about {
-    margin: 4rem 0;
+    margin: 5rem 0;
     width: 85%;
   }
   .about__bgCircle {
@@ -955,6 +955,7 @@ main .wrapper {
   transform: translate(-20%, -50%);
   color: #2c2c2c;
   width: 45%;
+  height: 65%;
   padding: 3% 0;
   background-color: #fff;
   box-shadow: 10px 10px 0 #86b68b;
@@ -973,6 +974,7 @@ main .wrapper {
   display: flex;
   flex-direction: column;
   border: none;
+  height: 100%;
 }
 .contact .form fieldset > * {
   font-family: "Poppins", sans-serif;
