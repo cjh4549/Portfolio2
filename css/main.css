@@ -941,7 +941,7 @@ main .wrapper {
   height: 120%;
   top: -10%;
   left: 0;
-  border-radius: 0 50% 50% 0;
+  border-radius: 0 40% 40% 0;
   z-index: -2;
 }
 
@@ -950,11 +950,11 @@ main .wrapper {
 }
 .contact .form {
   position: absolute;
-  top: 50%;
+  top: 55%;
   left: 20%;
   transform: translate(-20%, -50%);
   color: #2c2c2c;
-  width: 50%;
+  width: 45%;
   padding: 4%;
   background-color: #fff;
   box-shadow: 10px 10px 0 #86b68b;
@@ -995,6 +995,7 @@ main .wrapper {
   background-color: #fff;
   border: 3px solid #86b68b;
   font-family: inherit;
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
 }
 .contact .form fieldset input {
   width: 100%;
@@ -1024,10 +1025,12 @@ main .wrapper {
   top: 50%;
   right: 5%;
   transform: translate(-50%, -50%);
-  background-color: #86b68b;
+  background-color: #73a077;
   color: #fff;
   width: 6%;
   height: 50%;
+  border: 3px solid #fff;
+  z-index: 1000;
 }
 .contact__socialIcons__container {
   display: flex;
@@ -1044,4 +1047,108 @@ main .wrapper {
 }
 .contact__socialIcons__container li:hover, .contact__socialIcons__container li:focus {
   border-bottom: 4px solid #fff;
+}
+
+@media (max-width: 1200px) {
+  .contact__wrapper::before {
+    width: 75%;
+    border-radius: 0 48% 48% 0;
+  }
+
+  .contact .form {
+    width: 65%;
+    height: 78%;
+  }
+  .contact .form fieldset textarea {
+    height: 24vw;
+  }
+}
+@media (max-width: 940px) {
+  .contact__wrapper::before {
+    width: 80%;
+    border-radius: 0 48% 48% 0;
+  }
+
+  .contact .form {
+    width: 65%;
+    height: 75%;
+  }
+  .contact .form fieldset textarea {
+    height: 30vw;
+  }
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .contactBody {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .projectsBg {
+    height: 120vh;
+  }
+
+  .contact__wrapper::before {
+    height: 130%;
+  }
+
+  .contact .form {
+    margin-top: 5.5rem;
+  }
+  .contact .form fieldset textarea {
+    height: 40vw;
+  }
+
+  .contact__socialIcons {
+    top: 70%;
+  }
+}
+@media (max-width: 628px) {
+  .contact__wrapper::before {
+    width: 90%;
+    border-radius: 0 48% 48% 0;
+  }
+
+  .contact .form {
+    padding-left: 13%;
+    margin-left: 1rem;
+    width: 85%;
+  }
+  .contact .form fieldset textarea {
+    height: 50vw;
+  }
+
+  .contact__socialIcons {
+    background-color: #fff;
+    color: #86b68b;
+    top: 70%;
+    left: 12%;
+  }
+
+  .contact .form h2 {
+    transform: rotate(-10deg);
+    top: -4%;
+  }
+}
+/* Landscape phones and down */
+@media (max-width: 540px) {
+  .contact .form {
+    padding: 9%;
+  }
+
+  .contact__socialIcons {
+    width: 80%;
+    transform: translateX(0);
+    height: 5%;
+    top: 100%;
+    left: 10%;
+  }
+  .contact__socialIcons__container {
+    flex-direction: row;
+    width: 100%;
+  }
+  .contact__socialIcons__container li a {
+    display: flex;
+    align-items: center;
+  }
 }

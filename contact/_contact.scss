@@ -16,7 +16,7 @@
     height: 120%;
     top: -10%;
     left: 0;
-    border-radius: 0 50% 50% 0;
+    border-radius: 0 40% 40% 0;
     z-index: -2;
   }
 }
@@ -26,11 +26,11 @@
 
   .form {
     position: absolute;
-    top: 50%;
+    top: 55%;
     left: 20%;
     transform: translate(-20%, -50%);
     color: $black;
-    width: 50%;
+    width: 45%;
     padding: 4%;
     background-color: $offWhite;
     box-shadow: 10px 10px 0 $forrest;
@@ -77,6 +77,7 @@
         background-color: $offWhite;
         border: 3px solid $forrest;
         font-family: inherit;
+        @include fluid(16, 20, 300);
       }
 
       & input {
@@ -114,10 +115,12 @@
   top: 50%;
   right: 5%;
   transform: translate(-50%, -50%);
-  background-color: $forrest;
+  background-color: $darkerForrest;
   color: $offWhite;
   width: 6%;
   height: 50%;
+  border: 3px solid $offWhite;
+  z-index: 1000;
 
   &__container {
     display: flex;
@@ -137,6 +140,122 @@
     & li:hover,
     & li:focus {
       border-bottom: 4px solid $offWhite;
+    }
+  }
+}
+
+// Media queries
+
+@media (max-width: 1200px) {
+  .contact__wrapper::before {
+    width: 75%;
+    border-radius: 0 48% 48% 0;
+  }
+
+  .contact .form {
+    width: 65%;
+    height: 78%;
+
+    & fieldset textarea {
+      height: 24vw;
+    }
+  }
+}
+
+@media (max-width: 940px) {
+  .contact__wrapper::before {
+    width: 80%;
+    border-radius: 0 48% 48% 0;
+  }
+
+  .contact .form {
+    width: 65%;
+    height: 75%;
+
+    & fieldset textarea {
+      height: 30vw;
+    }
+  }
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  .contactBody {
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+
+  .projectsBg {
+    height: 120vh;
+  }
+
+  .contact__wrapper::before {
+    height: 130%;
+  }
+
+  .contact .form {
+    margin-top: 5.5rem;
+
+    & fieldset textarea {
+      height: 40vw;
+    }
+  }
+
+  .contact__socialIcons {
+    top: 70%;
+  }
+}
+
+@media (max-width: 628px) {
+  .contact__wrapper::before {
+    width: 90%;
+    border-radius: 0 48% 48% 0;
+  }
+
+  .contact .form {
+    padding-left: 13%;
+    margin-left: 1rem;
+    width: 85%;
+
+    & fieldset textarea {
+      height: 50vw;
+    }
+  }
+
+  .contact__socialIcons {
+    background-color: $offWhite;
+    color: $forrest;
+    top: 70%;
+    left: 12%;
+  }
+
+  .contact .form h2 {
+    transform: rotate(-10deg);
+    top: -4%;
+  }
+}
+
+/* Landscape phones and down */
+@media (max-width: 540px) {
+  .contact .form {
+    padding: 9%;
+  }
+
+  .contact__socialIcons {
+    width: 80%;
+    transform: translateX(0);
+    height: 5%;
+    top: 100%;
+    left: 10%;
+
+    &__container {
+      flex-direction: row;
+      width: 100%;
+
+      & li a {
+        display: flex;
+        align-items: center;
+      }
     }
   }
 }
