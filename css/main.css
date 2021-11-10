@@ -955,7 +955,7 @@ main .wrapper {
   transform: translate(-20%, -50%);
   color: #2c2c2c;
   width: 45%;
-  padding: 4%;
+  padding: 3% 0;
   background-color: #fff;
   box-shadow: 10px 10px 0 #86b68b;
   z-index: 999;
@@ -964,8 +964,8 @@ main .wrapper {
 .contact .form h2 {
   position: absolute;
   top: -2%;
-  left: -3%;
-  font-size: calc( 25px + (40 - 25) * ((100vw - 300px) / (1600 - 300)) );
+  left: -5%;
+  font-size: calc( 22px + (35 - 22) * ((100vw - 300px) / (1600 - 300)) );
   transform: rotate(-10deg);
   letter-spacing: 5px;
 }
@@ -976,6 +976,8 @@ main .wrapper {
 }
 .contact .form fieldset > * {
   font-family: "Poppins", sans-serif;
+  width: 90%;
+  margin: 0 auto;
 }
 .contact .form fieldset button {
   color: #2c2c2c;
@@ -991,7 +993,7 @@ main .wrapper {
   cursor: pointer;
 }
 .contact .form fieldset input, .contact .form fieldset textarea {
-  padding: 4%;
+  padding: 3%;
   background-color: #fff;
   border: 3px solid #86b68b;
   font-family: inherit;
@@ -999,7 +1001,6 @@ main .wrapper {
 }
 .contact .form fieldset input {
   width: 100%;
-  padding: 4%;
   margin: 0 5% 5% 0;
   border: none;
   border-bottom: 3px solid #86b68b;
@@ -1008,7 +1009,7 @@ main .wrapper {
   margin: 0 0 5% 0;
 }
 .contact .form fieldset textarea {
-  height: 15vw;
+  height: 35vh;
   margin-bottom: 2rem;
 }
 .contact .form-container {
@@ -1060,7 +1061,7 @@ main .wrapper {
     height: 78%;
   }
   .contact .form fieldset textarea {
-    height: 24vw;
+    height: 43vh;
   }
 }
 @media (max-width: 940px) {
@@ -1096,7 +1097,7 @@ main .wrapper {
     margin-top: 5.5rem;
   }
   .contact .form fieldset textarea {
-    height: 40vw;
+    height: 45vh;
   }
 
   .contact__socialIcons {
@@ -1115,7 +1116,7 @@ main .wrapper {
     width: 85%;
   }
   .contact .form fieldset textarea {
-    height: 50vw;
+    height: 45vh;
   }
 
   .contact__socialIcons {
@@ -1136,11 +1137,15 @@ main .wrapper {
     padding: 9%;
   }
 
+  .contact .form fieldset textarea {
+    margin-bottom: 1rem;
+  }
+
   .contact__socialIcons {
     width: 80%;
     transform: translateX(0);
     height: 5%;
-    top: 100%;
+    top: 99%;
     left: 10%;
   }
   .contact__socialIcons__container {
@@ -1163,7 +1168,7 @@ main .wrapper {
   }
 
   .contact .form fieldset textarea {
-    height: 65vw;
+    height: 45vh;
   }
   .contact .form fieldset > * {
     width: 100%;
@@ -1175,6 +1180,6 @@ main .wrapper {
 }
 @media (max-width: 370px) {
   .contact .form fieldset textarea {
-    height: 80vw;
+    height: 45vh;
   }
 }

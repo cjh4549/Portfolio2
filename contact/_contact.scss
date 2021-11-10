@@ -31,7 +31,7 @@
     transform: translate(-20%, -50%);
     color: $black;
     width: 45%;
-    padding: 4%;
+    padding: 3% 0;
     background-color: $offWhite;
     box-shadow: 10px 10px 0 $forrest;
     z-index: 999;
@@ -40,8 +40,8 @@
     & h2 {
       position: absolute;
       top: -2%;
-      left: -3%;
-      @include fluid(25, 40, 300);
+      left: -5%;
+      @include fluid(22, 35, 300);
       transform: rotate(-10deg);
       letter-spacing: 5px;
     }
@@ -53,6 +53,8 @@
 
       & > * {
         font-family: "Poppins", sans-serif;
+        width: 90%;
+        margin: 0 auto;
       }
 
       & button {
@@ -73,7 +75,7 @@
 
       & input,
       & textarea {
-        padding: 4%;
+        padding: 3%;
         background-color: $offWhite;
         border: 3px solid $forrest;
         font-family: inherit;
@@ -82,7 +84,6 @@
 
       & input {
         width: 100%;
-        padding: 4%;
         margin: 0 5% 5% 0;
         border: none;
         border-bottom: 3px solid $forrest;
@@ -93,7 +94,7 @@
       }
 
       & textarea {
-        height: 15vw;
+        height: 35vh;
         margin-bottom: 2rem;
       }
     }
@@ -157,7 +158,7 @@
     height: 78%;
 
     & fieldset textarea {
-      height: 24vw;
+      height: 43vh;
     }
   }
 }
@@ -197,7 +198,7 @@
     margin-top: 5.5rem;
 
     & fieldset textarea {
-      height: 40vw;
+      height: 45vh;
     }
   }
 
@@ -218,7 +219,7 @@
     width: 85%;
 
     & fieldset textarea {
-      height: 50vw;
+      height: 45vh;
     }
   }
 
@@ -241,11 +242,15 @@
     padding: 9%;
   }
 
+  .contact .form fieldset textarea {
+    margin-bottom: 1rem;
+  }
+
   .contact__socialIcons {
     width: 80%;
     transform: translateX(0);
     height: 5%;
-    top: 100%;
+    top: 99%;
     left: 10%;
 
     &__container {
@@ -272,7 +277,7 @@
 
   .contact .form fieldset {
     & textarea {
-      height: 65vw;
+      height: 45vh;
     }
 
     & > * {
@@ -287,6 +292,6 @@
 
 @media (max-width: 370px) {
   .contact .form fieldset textarea {
-    height: 80vw;
+    height: 45vh;
   }
 }
