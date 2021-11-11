@@ -8,7 +8,8 @@
     <title>Jun Choi | Projects</title>
     <link rel="stylesheet" href="../css/main.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
-    <link rel="stylesheet" href="../glider/glider.css">
+    <link rel="stylesheet" href="../glide/glide.core.min.css">
+    <link rel="stylesheet" href="../glide/glide.theme.min.css">
 </head>
 
 <body class="project">
@@ -34,69 +35,157 @@
         <section class="project__section">
             <div class="wrapper">
 
-                <div class="glider-contain">
-                    <!-- Using kebab casing for the library-->
 
-                    <div class="project__glider">
-                        <div class="project__container">
-                            <img class="project__container__img" src="../img/project 4 laptop.png"
-                                alt="A laptop mockup of my React project 4 called 'What do you no?'">
-                            <div class="project__container__text">
-                                <div class="project__container__description">
-                                    <h3>What Do You No?</h3>
-                                    <p>Match the correct homophone with the definition to score points. Submit your
-                                        score to
-                                        see
-                                        how you stack up.</p>
-                                    <p>React, Group Programming, HTML5, CSS3, Firebase</p>
+                <div class="glide">
+                    <div class="glide__track" data-glide-el="track">
+                        <ul class="glide__slides">
+                            <li class="glide__slide">
+                                <div class="project__container">
+                                    <img class="project__container__img" src="../img/project 4 laptop.png"
+                                        alt="A laptop mockup of my React project 4 called 'What do you no?'">
+                                    <div class="project__container__text">
+                                        <div class="project__container__description">
+                                            <h3>What Do You No?</h3>
+                                            <p>Match the correct homophone with the definition to score points. Submit
+                                                your
+                                                score to
+                                                see
+                                                how you stack up.</p>
+                                            <p>React, Group Programming, HTML5, CSS3, Firebase</p>
+                                        </div>
+                                        <div class="project__container__links">
+                                            <a href="https://quizzical-carson-61389e.netlify.app/">Live</a>
+                                            <a
+                                                href="https://github.com/whatDoYouNoProjectFour/bootcampProjectFour">GitHub</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="project__container__links">
-                                    <a href="https://quizzical-carson-61389e.netlify.app/">Live</a>
-                                    <a href="https://github.com/whatDoYouNoProjectFour/bootcampProjectFour">GitHub</a>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="project__container">
+                                    <img class="project__container__img" src="../img/planted.png"
+                                        alt="A phone mockup of Planted project">
+                                    <div class="project__container__text">
+                                        <div class="project__container__description">
+                                            <h3>Planted</h3>
+                                            <p>Conversion of a PSD design into a pixel perfect multi-page website that
+                                                that is
+                                                fully
+                                                responsive and accessible.</p>
+                                            <p>HTML5, SCSS, a11y, JavaScript</p>
+                                        </div>
+                                        <div class="project__container__links">
+                                            <a href="https://cjh4549.github.io/Planted">Live</a>
+                                            <a href="https://github.com/cjh4549/Planted">GitHub</a>
+                                        </div>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div class="project__container">
-                            <img class="project__container__img" src="../img/planted.png"
-                                alt="A phone mockup of Planted project">
-                            <div class="project__container__text">
-                                <div class="project__container__description">
-                                    <h3>Planted</h3>
-                                    <p>Conversion of a PSD design into a pixel perfect multi-page website that that is
-                                        fully
-                                        responsive and accessible.</p>
-                                    <p>HTML5, SCSS, a11y, JavaScript</p>
+                            </li>
+                            <li class="glide__slide">
+                                <div class="project__container">
+                                    <img class="project__container__img" src="../img/ipad mockup.png"
+                                        alt="An ipad mockup of Air Quality project">
+                                    <div class="project__container__text">
+                                        <div class="project__container__description">
+                                            <h3>Air Quality Project</h3>
+                                            <p>Utilizes multiple API calls to show users different air qualities of
+                                                cities.</p>
+                                            <p>HTML5, SCSS, JavaScript, REST API, Pair Programming</p>
+                                        </div>
+                                        <div class="project__container__links">
+                                            <a href="https://robklassen.github.io/jBoot36-proj2-AirQuality">Live</a>
+                                            <a href="https://github.com/RobKlassen/jBoot36-proj2-AirQuality">GitHub</a>
+                                        </div>
+                                    </div>
                                 </div>
-                                <div class="project__container__links">
-                                    <a href="https://cjh4549.github.io/Planted">Live</a>
-                                    <a href="https://github.com/cjh4549/Planted">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="project__container">
-                            <img class="project__container__img" src="../img/ipad mockup.png"
-                                alt="An ipad mockup of Air Quality project">
-                            <div class="project__container__text">
-                                <div class="project__container__description">
-                                    <h3>Air Quality Project</h3>
-                                    <p>Utilizes multiple API calls to show users different air qualities of cities.</p>
-                                    <p>HTML5, SCSS, JavaScript, REST API, Pair Programming</p>
-                                </div>
-                                <div class="project__container__links">
-                                    <a href="https://robklassen.github.io/jBoot36-proj2-AirQuality">Live</a>
-                                    <a href="https://github.com/RobKlassen/jBoot36-proj2-AirQuality">GitHub</a>
-                                </div>
-                            </div>
-                        </div>
+                            </li>
+                        </ul>
                     </div>
-                    <div id="resp-dots" class="glider-dots"></div>
+                    <div class="glide__arrows" data-glide-el="controls">
+                        <button class="glide__arrow glide__arrow--left" data-glide-dir="<"><i
+                                class="fas fa-angle-double-left"></i></button>
+                        <button class="glide__arrow glide__arrow--right" data-glide-dir=">"><i
+                                class="fas fa-angle-double-right"></i></button>
+                    </div>
                 </div>
+
+
+
 
             </div>
         </section>
     </main>
-    <script src="../glider/glider.js"></script>
-    <script type="text/javascript" src="./project.js"></script>
+    <script src="../glide/glide.js"></script>
+    <script src="../home.js"></script>
+    <script>
+        const glide = new Glide('.glide', {
+            type: 'carousel',
+            focusAt: 'center',
+            keyboard: true,
+            perView: 1
+        })
+
+        glide.mount()
+    </script>
 </body>
 
 </html>
+
+
+
+
+<!-- <div class="glider-contain">
+    <div class="project__glider">
+        <div class="project__container">
+            <img class="project__container__img" src="../img/project 4 laptop.png"
+                alt="A laptop mockup of my React project 4 called 'What do you no?'">
+            <div class="project__container__text">
+                <div class="project__container__description">
+                    <h3>What Do You No?</h3>
+                    <p>Match the correct homophone with the definition to score points. Submit your
+                        score to
+                        see
+                        how you stack up.</p>
+                    <p>React, Group Programming, HTML5, CSS3, Firebase</p>
+                </div>
+                <div class="project__container__links">
+                    <a href="https://quizzical-carson-61389e.netlify.app/">Live</a>
+                    <a href="https://github.com/whatDoYouNoProjectFour/bootcampProjectFour">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project__container">
+            <img class="project__container__img" src="../img/planted.png"
+                alt="A phone mockup of Planted project">
+            <div class="project__container__text">
+                <div class="project__container__description">
+                    <h3>Planted</h3>
+                    <p>Conversion of a PSD design into a pixel perfect multi-page website that that is
+                        fully
+                        responsive and accessible.</p>
+                    <p>HTML5, SCSS, a11y, JavaScript</p>
+                </div>
+                <div class="project__container__links">
+                    <a href="https://cjh4549.github.io/Planted">Live</a>
+                    <a href="https://github.com/cjh4549/Planted">GitHub</a>
+                </div>
+            </div>
+        </div>
+        <div class="project__container">
+            <img class="project__container__img" src="../img/ipad mockup.png"
+                alt="An ipad mockup of Air Quality project">
+            <div class="project__container__text">
+                <div class="project__container__description">
+                    <h3>Air Quality Project</h3>
+                    <p>Utilizes multiple API calls to show users different air qualities of cities.</p>
+                    <p>HTML5, SCSS, JavaScript, REST API, Pair Programming</p>
+                </div>
+                <div class="project__container__links">
+                    <a href="https://robklassen.github.io/jBoot36-proj2-AirQuality">Live</a>
+                    <a href="https://github.com/RobKlassen/jBoot36-proj2-AirQuality">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="resp-dots" class="glider-dots"></div>
+</div> -->

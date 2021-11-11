@@ -841,28 +841,28 @@ main .wrapper {
   }
 }
 .project {
-  overflow-x: hidden;
   background: #f3efcc;
 }
-.project__main {
-  display: flex;
-  min-height: 85vh;
+.project__section {
+  height: 85vh;
 }
-.project__glider {
-  display: flex;
-  overflow-x: hidden;
-  height: 75vh;
+.project__section .wrapper {
+  width: 100%;
 }
 .project__container {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100%;
+  padding-top: 7rem;
+  padding-right: 2rem;
+  padding-bottom: 7rem;
 }
 .project__container:first-of-type {
   padding-left: 2rem;
 }
 .project__container:first-of-type img {
+  width: 30%;
   padding-left: 2rem;
   margin-right: 5rem;
 }
@@ -885,7 +885,7 @@ main .wrapper {
 }
 .project__container__description p:first-of-type {
   margin: 1rem 0;
-  font-size: calc( 18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)) );
+  font-size: calc( 16px + (20 - 16) * ((100vw - 300px) / (1600 - 300)) );
 }
 .project__container__description p:last-of-type {
   display: flex;
@@ -901,23 +901,37 @@ main .wrapper {
 }
 
 @media (max-width: 1200px) {
-  .project__container__img {
-    width: 40%;
+  .project__container__description {
+    padding: 1rem;
   }
 }
-@media (max-width: 940px) {
+@media (max-width: 950px) {
   .project__container {
     flex-direction: column;
   }
-  .project__container__img {
-    margin: 2rem;
+  .project__container img {
+    width: 60%;
   }
-  .project__container__text {
-    width: 80%;
+  .project__container:first-of-type img {
+    width: 50%;
+    margin: 0;
+    padding: 0;
   }
 }
-/* Landscape phone to portrait tablet */
-/* Landscape phones and down */
+@media (max-width: 941px) {
+  .project__section {
+    height: 110vh;
+  }
+
+  .project__container__text {
+    width: 70%;
+  }
+}
+@media (max-width: 768px) {
+  .project__section {
+    height: 100vh;
+  }
+}
 .contactBody {
   overflow-y: hidden;
 }
