@@ -286,6 +286,10 @@ h3 {
   letter-spacing: 2px;
 }
 
+h3 {
+  font-size: calc( 18px + (23 - 18) * ((100vw - 300px) / (1600 - 300)) );
+}
+
 p {
   font-size: calc( 18px + (20 - 18) * ((100vw - 300px) / (1600 - 300)) );
   font-weight: 400;
@@ -337,6 +341,7 @@ fieldset {
   width: 30%;
   justify-content: space-between;
   align-items: center;
+  z-index: 100;
 }
 .navbar__logo {
   letter-spacing: 2px;
@@ -929,7 +934,22 @@ main .wrapper {
 }
 @media (max-width: 768px) {
   .project__section {
+    height: 110vh;
+  }
+
+  .project__container:first-of-type img {
+    width: 60%;
+  }
+}
+@media (max-width: 547px) {
+  .project__section {
     height: 100vh;
+  }
+  .project__container {
+    padding: 2rem;
+  }
+  .project:first-of-type img {
+    width: 75%;
   }
 }
 .contactBody {

@@ -23,6 +23,10 @@ h3 {
   letter-spacing: 2px;
 }
 
+h3 {
+  @include fluid(18, 23, 300);
+}
+
 p {
   @include fluid(18, 20, 300);
   font-weight: 400;

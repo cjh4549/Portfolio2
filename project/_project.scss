@@ -106,6 +106,26 @@
 
 @media (max-width: 768px) {
   .project__section {
-    height: 100vh;
+    height: 110vh;
+  }
+
+  .project__container:first-of-type img {
+    width: 60%;
+  }
+}
+
+@media (max-width: 547px) {
+  .project {
+    &__section {
+      height: 100vh;
+    }
+
+    &__container {
+      padding: 2rem;
+    }
+
+    &:first-of-type img {
+      width: 75%;
+    }
   }
 }
