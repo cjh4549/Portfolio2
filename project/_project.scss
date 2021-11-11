@@ -129,3 +129,27 @@
     }
   }
 }
+
+@media (max-width: 447px) {
+  .project {
+    &__section {
+      height: 90vh;
+    }
+
+    &__container {
+      padding: 2rem;
+
+      &__text {
+        width: 100%;
+      }
+    }
+
+    &:first-of-type img {
+      width: 75%;
+    }
+  }
+
+  .glide__arrow {
+    margin: -1rem;
+  }
+}

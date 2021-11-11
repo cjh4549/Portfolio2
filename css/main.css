@@ -952,6 +952,24 @@ main .wrapper {
     width: 75%;
   }
 }
+@media (max-width: 447px) {
+  .project__section {
+    height: 90vh;
+  }
+  .project__container {
+    padding: 2rem;
+  }
+  .project__container__text {
+    width: 100%;
+  }
+  .project:first-of-type img {
+    width: 75%;
+  }
+
+  .glide__arrow {
+    margin: -1rem;
+  }
+}
 .contactBody {
   overflow-y: hidden;
 }
