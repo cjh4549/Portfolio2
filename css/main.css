@@ -1123,19 +1123,17 @@ main .wrapper {
     overflow-x: hidden;
   }
 
-  .projectsBg {
-    height: 120vh;
-  }
-
   .contact .form {
-    margin-top: 5.5rem;
+    margin-top: 1.5rem;
+    height: 60%;
+    padding: 6% 0;
   }
   .contact .form fieldset textarea {
     height: 45vh;
   }
 
   .contact__socialIcons {
-    top: 70%;
+    top: 60%;
   }
 }
 @media (max-width: 628px) {
@@ -1151,31 +1149,24 @@ main .wrapper {
   .contact__socialIcons {
     background-color: #fff;
     color: #86b68b;
-    top: 70%;
     left: 12%;
-  }
-
-  .contact .form h2 {
-    transform: rotate(-10deg);
-    top: -4%;
   }
 }
 /* Landscape phones and down */
 @media (max-width: 540px) {
   .contact .form {
-    padding: 9%;
+    padding: 8% 0;
   }
-
   .contact .form fieldset textarea {
     margin-bottom: 1rem;
   }
 
   .contact__socialIcons {
     width: 80%;
-    transform: translateX(0);
     height: 5%;
-    top: 99%;
-    left: 10%;
+    right: 0;
+    top: 93vh;
+    transform: translate(0);
   }
   .contact__socialIcons__container {
     flex-direction: row;
@@ -1188,7 +1179,7 @@ main .wrapper {
 }
 @media (max-width: 480px) {
   .contact .form {
-    padding: 5%;
+    padding: 12% 5%;
     margin-left: 0;
   }
 

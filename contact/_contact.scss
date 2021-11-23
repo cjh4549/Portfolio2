@@ -187,16 +187,10 @@
     overflow-x: hidden;
   }
 
-  .projectsBg {
-    height: 120vh;
-  }
-
-  // .contact__wrapper::before {
-  //   height: 130%;
-  // }
-
   .contact .form {
-    margin-top: 5.5rem;
+    margin-top: 1.5rem;
+    height: 60%;
+    padding: 6% 0;
 
     & fieldset textarea {
       height: 45vh;
@@ -204,16 +198,11 @@
   }
 
   .contact__socialIcons {
-    top: 70%;
+    top: 60%;
   }
 }
 
 @media (max-width: 628px) {
-  // .contact__wrapper::before {
-  //   width: 90%;
-  //   border-radius: 0 48% 48% 0;
-  // }
-
   .contact .form {
     padding-left: 13%;
     margin-left: 1rem;
@@ -227,32 +216,26 @@
   .contact__socialIcons {
     background-color: $offWhite;
     color: $forrest;
-    top: 70%;
     left: 12%;
-  }
-
-  .contact .form h2 {
-    transform: rotate(-10deg);
-    top: -4%;
   }
 }
 
 /* Landscape phones and down */
 @media (max-width: 540px) {
   .contact .form {
-    padding: 9%;
-  }
+    padding: 8% 0;
 
-  .contact .form fieldset textarea {
-    margin-bottom: 1rem;
+    & fieldset textarea {
+      margin-bottom: 1rem;
+    }
   }
 
   .contact__socialIcons {
     width: 80%;
-    transform: translateX(0);
     height: 5%;
-    top: 99%;
-    left: 10%;
+    right: 0;
+    top: 93vh;
+    transform: translate(0);
 
     &__container {
       flex-direction: row;
@@ -267,13 +250,8 @@
 }
 
 @media (max-width: 480px) {
-  // .contact__wrapper::before {
-  //   width: 100%;
-  //   border-radius: 0 0 100% 0;
-  // }
-
   .contact .form {
-    padding: 5%;
+    padding: 12% 5%;
     margin-left: 0;
   }
 
