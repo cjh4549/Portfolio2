@@ -965,10 +965,6 @@ main .wrapper {
   .project:first-of-type img {
     width: 75%;
   }
-
-  .glide__arrow--right {
-    top: 25%;
-  }
 }
 .contactBody {
   overflow-y: hidden;
