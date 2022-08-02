@@ -3,7 +3,7 @@
   display: block;
   top: 50%;
   z-index: 2;
-  color: white;
+  color: #000;
   text-transform: uppercase;
   padding: 9px 12px;
   background-color: transparent;
@@ -74,4 +74,18 @@
   cursor: grabbing;
   cursor: -moz-grabbing;
   cursor: -webkit-grabbing;
+}
+
+@media only screen and (max-width: 480px) {
+  .glide__arrow--left,
+  .glide__arrow--right {
+    top: 120px;
+  }
+
+  .glide__arrow--left {
+    left: 1em;
+  }
+  .glide__arrow--right {
+    right: 1em;
+  }
 }
